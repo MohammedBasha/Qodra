@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_bt_portfolio/models/rules">
+	<fieldset name="details">
+		
+		<field name="name" type="text"
+			label="COM_BT_PORTFOLIO_EXTRAFIELD_NAME" description="COM_BT_PORTFOLIO_EXTRAFIELD_NAME_DESC"
+			size="60" class="inputbox" required="true" default="" />
+		<field name="type" type="ExtraFieldType" class="inputbox" onchange="switchType(this.value)"
+			default="" label="COM_BT_PORTFOLIO_EXTRAFIELD_TYPE"
+			description="COM_BT_PORTFOLIO_EXTRAFIELD_NAME_DESC" required="true">
+			<option value="0">COM_BT_PORTFOLIO_SELECT_TYPE</option>
+		</field>
+		
+		<field name="type_string" type="text"
+			label="COM_BT_PORTFOLIO_EXTRAFIELD_DEFAULT_LABEL" description="COM_BT_PORTFOLIO_EXTRAFIELD_DEFAULT_DESC"
+			size="80" class="inputbox type_string"  default="" />
+		<field name="type_measurement" type="extrameasurement"
+			label="COM_BT_PORTFOLIO_EXTRAFIELD_MEASUREMENT_DEFAULT_LABEL" description="COM_BT_PORTFOLIO_EXTRAFIELD_DEFAULT_MEASUREMENT_DESC"
+			size="17" class="inputbox type_measurement"  default="" />
+		<field name="type_text" type="editor" filter="JComponentHelper::filterText"
+			label="COM_BT_PORTFOLIO_EXTRAFIELD_DEFAULT_LABEL" description="COM_BT_PORTFOLIO_EXTRAFIELD_DEFAULT_DESC"
+			size="60" class="inputbox type_text"  default="" />	
+			<field name="type_link" type="extralink" size="60" class="inputbox type_link" default="" label="COM_BT_PORTFOLIO_EXTRAFIELD_DEFAULT_LABEL" description="COM_BT_PORTFOLIO_EXTRAFIELD_DEFAULT_LINK_DESC"/>
+			<field name="type_image" type="media" directory="bt_portfolio/categories" class="inputbox"
+				hide_none="1" label="COM_BT_PORTFOLIO_EXTRAFIELD_DEFAULT_LABEL"
+				size="40"
+				description="COM_BT_PORTFOLIO_EXTRAFIELD_DEFAULT_DESC" />
+			<field name="type_dropdown" type="textarea"
+			label="COM_BT_PORTFOLIO_EXTRAFIELD_DDOPTIONS_LABEL" description="COM_BT_PORTFOLIO_EXTRAFIELD_DDOPTIONS_DESC"
+			rows="3" cols="30" class="inputbox" default="" />
+		<field name="type_date" type="calendar" format="%Y-%m-%d %H:%M:%S" filter="user_utc" size="30"
+			label="COM_BT_PORTFOLIO_EXTRAFIELD_DEFAULT_LABEL" description="COM_BT_PORTFOLIO_EXTRAFIELD_DEFAULT_DESC"
+			 class="inputbox type_date"  default="" />
+		<field name="description" type="textarea"
+			label="COM_BT_PORTFOLIO_EXTRAFIELD_DESCRIPTION_LABEL" description="COM_BT_PORTFOLIO_EXTRAFIELD_DESCRIPTION_DESC"
+			size="60" class="inputbox" default="" />	
+		<field name="ordering" type="ExtraFieldOrdering" label="JFIELD_ORDERING_LABEL" 
+			description="JFIELD_ORDERING_DESC" class="inputbox" default="0" />
+		<field name="published" type="list" label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC" class="inputbox" filter="intval"
+			size="1" default="1">
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+		</field>
+		<field
+			name="default_value"
+			type="hidden"
+		/>
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field type="portfoliocategory" required="true" default="0" multiple="multiple" label="COM_BT_PORTFOLIO_EXTRAFIELS_CATEGORY_LABEL" name="categories" description="COM_BT_PORTFOLIO_EXTRAFIELS_CATEGORY_DESC">
+			<option value="0">JALL</option>
+		</field>
+		<field type="asset" name="asset" path="administrator/components/com_bt_portfolio/models/fields/assets/" />
+	</fieldset>
+	
+
+</form>

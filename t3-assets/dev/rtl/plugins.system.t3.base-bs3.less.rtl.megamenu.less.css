@@ -1,0 +1,39 @@
+html[dir="rtl"] .t3-megamenu .mega-align-center > .dropdown-menu {
+  -webkit-transform: translate(50%, 0);
+  -ms-transform: translate(50%, 0);
+  -o-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+}
+html[dir="rtl"] .t3-megamenu .mega-nav .dropdown-submenu > a:after {
+  direction: ltr;
+}
+html[dir="rtl"] .t3-megamenu.animate.zoom .mega > .mega-dropdown-menu {
+  -webkit-transform-origin: 80% 20%;
+  -moz-transform-origin: 80% 20%;
+  -ms-transform-origin: 80% 20%;
+  transform-origin: 80% 20%;
+}
+html[dir="rtl"] .t3-megamenu.animate.zoom .level0 > .mega-align-center > .mega-dropdown-menu {
+  -webkit-transform: scale(0, 0) translate(50%, 0);
+  -ms-transform: scale(0, 0) translate(50%, 0);
+  transform: scale(0, 0) translate(50%, 0);
+  -webkit-transform-origin: 100% 20%;
+  -moz-transform-origin: 100% 20%;
+  -ms-transform-origin: 100% 20%;
+  transform-origin: 100% 20%;
+}
+html[dir="rtl"] .t3-megamenu.animate.zoom .level0 > .mega-align-center.open > .mega-dropdown-menu {
+  -webkit-transform: scale(1, 1) translate(50%, 0);
+  -ms-transform: scale(1, 1) translate(50%, 0);
+  transform: scale(1, 1) translate(50%, 0);
+}
+html[dir="rtl"] .t3-megamenu.animate.elastic .level0 > .mega-align-center > .mega-dropdown-menu {
+  transform: scale(1, 0) translate(50%, 0);
+  -webkit-transform: scale(1, 0) translate(50%, 0);
+  -ms-transform: scale(1, 0) translate(50%, 0);
+}
+html[dir="rtl"] .t3-megamenu.animate.elastic .level0 > .mega-align-center.open > .mega-dropdown-menu {
+  transform: scale(1, 1) translate(50%, 0);
+  -webkit-transform: scale(1, 1) translate(50%, 0);
+  -ms-transform: scale(1, 1) translate(50%, 0);
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+  <layout title="Single Portfolio">
+    <message><![CDATA[Single Portfolio]]></message>
+  </layout>
+  <fields name="request" addfieldpath="/administrator/components/com_bt_portfolio/models/fields">
+    <fieldset name="request">
+      <field name="id" type="portfolio" required="true" class="inputbox" default="" label="COM_BT_PORTFOLIO_PORTFOLIO_SELECT_PORTFOLIO" description="COM_BT_PORTFOLIO_PORTFOLIO_SELECT_PORTFOLIO_DESC">
+      </field>
+    </fieldset>
+  </fields>
+ <fields name="params">
+		<fieldset name="layout" label="COM_BT_PORTFOLIO_CATEGORY_LAYOUT_OPTIONS">
+		<field name="theme" type="btthemes" path="components/com_bt_portfolio/themes"
+			label="COM_BT_PORTFOLIO_CONFIG_THEME_LABEL" description="COM_BT_PORTFOLIO_CONFIG_THEME_DESC"
+			default="">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+		</field>
+		</fieldset>
+	</fields>
+
+</metadata>

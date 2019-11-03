@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addons>
+    <addon name="mailchimp"
+        label="MailChimp"
+        description="ConvertForms MailChimp addon allows you to create MailChimp newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/mailchimp.png"
+        docalias="sync-leads-with-mailchimp"
+    />
+    <addon name="getresponse"
+        label="GetResponse"
+        description="ConvertForms GetResponse addon allows you to create GetResponse newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/get-response.png"
+        docalias="sync-leads-with-getresponse"
+    />
+    <addon name="activecampaign"
+        label="Active Campaign"
+        description="ConvertForms ActiveCampaign addon allows you to create ActiveCampaign newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/active-campaign.png"
+        docalias="sync-leads-with-activecampaign"
+    />
+    <addon name="acymailing"
+        label="AcyMailing"
+        description="ConvertForms AcyMailing addon allows you to create AcyMailing newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/acymailing.png"
+        docalias="sync-leads-with-acymailing"
+    />
+    <addon name="aweber"
+        label="AWeber"
+        description="ConvertForms AWeber addon allows you to create AWeber newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/aweber.png"
+        docalias="sync-leads-with-aweber"
+    />
+    <addon name="campaignmonitor"
+        label="Campaign Monitor"
+        description="ConvertForms CampaignMonitor addon allows you to create CampaignMonitor newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/campaign-monitor.png"
+        docalias="sync-leads-with-campaignmonitor"
+    />
+    <addon name="convertkit"
+        label="ConvertKit"
+        description="ConvertForms ConvertKit addon allows you to create ConvertKit newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/convertkit.png"
+        docalias="sync-leads-with-convertkit"
+    />
+    <addon name="hubspot"
+        label="HubSpot"
+        description="ConvertForms HubSpot addon allows you to create HubSpot newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/hubspot.png"
+        docalias="sync-leads-with-hubspot"
+    />
+    <addon name="sendinblue"
+        label="SendinBlue"
+        description="ConvertForms SendinBlue addon allows you to create SendinBlue newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/sendinblue.png"
+        docalias="sync-leads-with-sendinblue"
+    />
+    <addon name="zapier"
+        label="Zapier"
+        description="ConvertForms Zapier addon allows you to connect Your Joomla Forms with 500+ Web Apps."
+        image="https://static.tassos.gr/images/integrations/zapier.png"
+        docalias="how-to-connect-convertforms-with-zapier"
+    />
+    <addon name="zoho"
+        label="Zoho Campaigns"
+        description="ConvertForms Zoho addon allows you to connect Your Joomla Forms with Zoho Campaigns."
+        image="https://static.tassos.gr/images/integrations/zoho.png"
+        docalias="how-to-connect-convertforms-with-zoho"
+    />
+    <addon name="elasticemail"
+        label="Elastic Email"
+        description="ConvertForms Elastic Email addon allows you to create Elastic Email newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/elasticemail.png"
+        docalias="sync-leads-with-elasticemail"
+    />
+    <addon name="icontact"
+        label="iContact"
+        description="ConvertForms iContact addon allows you to create iContact newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/icontact.png"
+        docalias="how-to-connect-convertforms-with-icontact"
+    />
+    <addon name="zohocrm"
+        label="Zoho CRM"
+        description="ConvertForms Zoho CRM addon allows you to sync your Submissions with Zoho CRM's modules."
+        image="https://static.tassos.gr/images/integrations/zohocrm.png"
+        docalias="how-to-connect-convertforms-with-zohocrm"
+    />
+    <addon name="salesforce"
+        label="SalesForce Web-to-Lead"
+        description="ConvertForms SalesForce addon allows you to create SalesForce Web-to-Lead forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/salesforce.png"
+        docalias="sync-leads-with-salesforce"
+    />
+    <!-- Coming Soon -->
+    <addon name="constantcontact"
+        label="ConstantContact"
+        description="ConvertForms ConstantContact addon allows you to create ConstantContact newsletter signup forms in Joomla."
+        image="https://static.tassos.gr/images/integrations/constant-contact.png"
+        comingsoon="true"
+    />
+</addons>

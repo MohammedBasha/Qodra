@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="default">
+
+
+
+		<field name="name" type="text" filter="string" class="your-name"
+			label="COM_BT_PORTFOLIO_YOUR_NAME" required="true" size="30"
+			 message="COM_BT_PORTFOLIO_ERROR_COMMENT_NAME"
+			 />
+
+		<field name="email" type="email" filter="string" class="your-email"
+			label="COM_BT_PORTFOLIO_YOUR_EMAIL" required="true" size="30"
+			validate="email"
+			 message="COM_BT_PORTFOLIO_ERROR_COMMENT_EMAIL"
+			 />
+		<field name="website" type="text" filter="string" class="your-website"
+			label="COM_BT_PORTFOLIO_YOUR_WEBSITE" size="30" />
+		<field name="title" type="text" filter="string" class="review-title"
+			label="COM_BT_PORTFOLIO_YOUR_REVIEW_TITLE" size="30"
+			 message="COM_BT_PORTFOLIO_ERROR_COMMENT_TITLE"
+			 />
+		<field name="content" type="textarea" filter="string" required="true"
+			class="review-content" label="COM_BT_PORTFOLIO_YOUR_REVIEW_CONTENT"
+			cols="30" rows="5" message="COM_BT_PORTFOLIO_ERROR_COMMENT_CONTENT" />
+
+		<field name="captcha" type="captcha" label="COM_BT_PORTFOLIO_CAPTCHA_LABEL"
+			class="review-captcha" description="COM_BT_PORTFOLIO_CAPTCHA_DESC"
+			 message="COM_BT_PORTFOLIO_ERROR_COMMENT_CAPTCHA"
+			validate="captcha" />
+	</fieldset>
+</form>

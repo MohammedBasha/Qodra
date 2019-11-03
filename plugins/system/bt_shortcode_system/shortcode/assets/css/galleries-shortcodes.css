@@ -1,0 +1,94 @@
+.btsc-slider{
+	
+}
+
+.btsc-slider img{
+	width: 100%;
+}
+
+.btsc-carousel .owl-item .bt-carousel-item{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px 1px rgba(96, 96, 96, 0.1);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: 2px !important;
+    padding: 4px;
+    text-align: center;
+}
+.btsc-carousel .bt-carousel-item .item-title {
+    font: bold 12px/14px "Open Sans",sans-serif;
+    height: 14px;
+    margin: 6px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+.btsc-carousel .bt-carousel-item.item-desc {
+    font: 12px/28px "Open Sans",sans-serif;
+    height: 28px;
+    margin: 6px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+.btsc-carousel .bt-carousel-item .item-image img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.btsc-slider .owl-controls .owl-buttons div,
+.btsc-carousel .owl-controls .owl-buttons div {
+	position: absolute;
+	height: 31px;
+	width: 31px;
+	display: none;
+	margin-top: -15px;
+	top: 50%;
+}
+.btsc-slider:hover .owl-controls  .owl-buttons div,
+.btsc-carousel:hover .owl-controls  .owl-buttons div {
+	opacity: 0.7;
+	display: block;
+}
+.btsc-slider .owl-controls .owl-buttons .owl-prev,
+.btsc-carousel .owl-controls .owl-buttons .owl-prev{
+	left: 0px;
+	background: url(../images/re-left.png) no-repeat;
+}
+
+.btsc-slider .owl-controls .owl-buttons .owl-prev:hover,
+.btsc-carousel .owl-controls .owl-buttons .owl-prev:hover{
+	opacity: 1;
+	
+}
+
+.btsc-slider .owl-controls .owl-buttons .owl-next, 
+.btsc-carousel .owl-controls .owl-buttons .owl-next{
+	right: 0px;
+	background: url(../images/re-right.png) no-repeat;
+}
+
+.btsc-slider .owl-controls .owl-buttons .owl-next:hover
+.btsc-carousel .owl-controls .owl-buttons .owl-next:hover{
+	opacity: 1;
+}
+.btsc-carousel .item-image,
+.btsc-slider .item-image{
+	position: relative;
+}
+.btsc-carousel .item-image .image-title,
+.btsc-slider .item-image .image-title{
+	position: absolute;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	padding: 10px;
+	bottom: 0;
+	left: 0; right: 0;
+	margin: 0;
+}
+.btsc-carousel .item-image .image-title a,
+.btsc-slider .item-image .image-title a{
+	color: #ffffff;
+}

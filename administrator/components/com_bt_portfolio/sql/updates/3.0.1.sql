@@ -1,0 +1,1 @@
+alter table #__bt_portfolio_extrafields ADD COLUMN `all` int(4) default 0;

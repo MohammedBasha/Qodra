@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" method="upgrade">
+<name>BT Shortcode Plugin</name>
+<author>Bow Themes</author>
+<creationDate>November 2014</creationDate>
+<packagename>plg_bt_shortcode</packagename>
+<version>1.0.3</version>
+<url>http://www.bowthemes.com/</url>
+<packager>Bow Themes</packager>
+<packagerurl>http://www.bowthemes.com/</packagerurl>
+<description>BT Shortcode Plugin Package</description>
+
+ <files folder="packages">
+   <file type="plugin" id="bt_shortcode_system" group="system">bt_shortcode_system.zip</file>
+   <file type="plugin" id="bt_shortcode_content" group="content" >bt_shortcode_content.zip</file>
+   <file type="plugin" id="bt_shortcode" group="editors-xtd">bt_shortcode.zip</file>
+ </files>
+ </extension>

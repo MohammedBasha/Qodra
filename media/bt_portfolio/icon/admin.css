@@ -1,0 +1,32 @@
+.icon-48-portfolio{
+	background: url(portfolio.png) top left no-repeat;
+}
+.icon-48-portfolio-add{
+	background: url(portfolioNew.png) top left no-repeat;
+}
+.bt-description .adminform{
+	background:#fff;
+	padding:20px 30px;
+}
+.bt-description h3{
+	text-transform: uppercase;
+	margin: 10px 0px 10px 0px;
+	color:#ce8213;
+}
+.bt-description a{
+	color: #ce8213!important;
+}
+.bt-description img{
+	float:left;
+	margin:5px 10px 5px 0px;
+}
+.bt_description li{
+	padding: 5px 5px 5px 30px;
+	list-style: none outside none;
+}
+
+.bt-description ul.list-style li{
+	background:url(tick.png) 0px 6px no-repeat;
+	padding-left:30px;
+	line-height:15px;
+}

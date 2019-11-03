@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>BT Social icon</name>
+	<author>Bowthemes</author>
+	<creationDate>04 2015</creationDate>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>templates@bowthemes.com</authorEmail>
+	<authorUrl>www.bowthemes.com</authorUrl>
+	<version>1.0</version>
+	<description>BT Social icon</description>
+	<files>
+		<filename module="mod_bt_social_icon">mod_bt_social_icon.php</filename>
+		<folder>tmpl</folder>
+		<filename>mod_bt_social_icon.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_bt_social_icon.ini</language>
+		<language tag="en-GB">en-GB.mod_bt_social_icon.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_BT_SOCIAL_ICON" />
+	<config>
+		<fields name="params">
+			
+			<fieldset name="basic">	
+				<field name="link_facebook" type="text" label="BT_SOCIAL_ICON_FACEBOOK_LINK" description="BT_SOCIAL_ICON_FACEBOOK_LINK" />
+				<field name="link_twitter" type="text" label="BT_SOCIAL_ICON_TWITTER_LINK" description="BT_SOCIAL_ICON_TWITTER_LINK" />
+				<field name="link_linkedin" type="text" label="BT_SOCIAL_ICON_LINKEDIN_LINK" description="BT_SOCIAL_ICON_LINKEDIN_LINK" />
+				<field name="link_youtube" type="text" label="BT_SOCIAL_ICON_YOUTUBE_LINK" description="BT_SOCIAL_ICON_YOUTUBE_LINK" />
+				<field name="link_google_plus" type="text" label="BT_SOCIAL_ICON_GOOGLE_PLUS_LINK" description="BT_SOCIAL_ICON_GOOGLE_PLUS_LINK" />
+				<field name="link_pinterest" type="text" label="BT_SOCIAL_ICON_PINTEREST_LINK" description="BT_SOCIAL_ICON_PINTEREST_LINK" />
+				<field name="link_dribbble" type="text" label="BT_SOCIAL_ICON_DRIBBBLE_LINK" description="BT_SOCIAL_ICON_DRIBBBLE_LINK" />
+				<field name="link_xing" type="text" label="BT_SOCIAL_ICON_XING_LINK" description="BT_SOCIAL_ICON_XING_LINK" />
+				<field name="link_flickr" type="text" label="BT_SOCIAL_ICON_FLICKR_LINK" description="BT_SOCIAL_ICON_FLICKR_LINK" />
+				<field name="link_tumblr" type="text" label="BT_SOCIAL_ICON_TUMBLR_LINK" description="BT_SOCIAL_ICON_TUMBLR_LINK" />
+				<field name="link_skype" type="text" label="BT_SOCIAL_ICON_SKYPE_LINK" description="BT_SOCIAL_ICON_SKYPE_LINK" />
+				<field name="link_behance" type="text" label="BT_SOCIAL_ICON_BEHANCE_LINK" description="BT_SOCIAL_ICON_BEHANCE_LINK" />
+				<field name="link_vk" type="text" label="BT_SOCIAL_ICON_VK_LINK" description="BT_SOCIAL_ICON_VK_LINK" />
+				<field name="pre_text" type="editor" label="BT_SOCIAL_ICON_PRE_TEXT" cols="300"  width="500" filter="raw" description="BT_SOCIAL_ICON_PRE_TEXT" />
+			</fieldset>
+			
+			
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - BT Shortcode </name>
+	<author>BowThemes.com</author>
+	<creationDate>November 2014</creationDate>
+	<copyright>Copyright (C) 2014 BowThemes. All rights reserved.</copyright>
+	<authorEmail>support@bowthemes.com</authorEmail>
+	<authorUrl>http://www.bowthemes.com/</authorUrl>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.0.4</version>
+	<description>BT Shortcode system plugin</description>
+	
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="bt_shortcode_system">bt_shortcode_system.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>shortcode</folder>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.plg_system_bt_shortcode_system.ini</language>
+		<language tag="en-GB">en-GB.plg_system_bt_shortcode_system.sys.ini</language>
+	</languages> 
+	<config>
+		 <fields name="params">
+		 	<fieldset name="Basic" label="SETTING_SHORTCODE">
+		 		 <field name="prefix" type="text" default="bt_" label="PREFIX_SHORTOCDE" description="PREFIX_SHORTCODE_DESC" />
+		 		 <field name="primary_color" type="text" default="" label="PRIMARY_COLOR_LABEL" description="PRIMARY_COLOR_DESC"/>
+		 		 <field name="secondary_color" type="text" default="" label="SECONDARY_COLOR_LABEL" description="SECONDARY_COLOR_DESC"/>
+		 		 <field name="tertiary_color" type="text" default="" label="TERTIARY_COLOR_LABEL" description="TERTIARY_COLOR_DESC"/>
+		 	</fieldset>
+		 </fields>
+	</config>
+	
+</extension>

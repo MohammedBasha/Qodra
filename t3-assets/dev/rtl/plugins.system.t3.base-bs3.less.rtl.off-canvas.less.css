@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+  .off-canvas body > * {
+    left: 0;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  .off-canvas #off-canvas-nav .t3-mainnav {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  .off-canvas-enabled body > * {
+    -webkit-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+    transform: translateX(-250px);
+  }
+}
+.off-canvas-left.t3-off-canvas {
+  left: 0;
+  right: auto;
+}
+.off-canvas-left.old-ie .t3-off-canvas {
+  left: -250px;
+  right: auto;
+}

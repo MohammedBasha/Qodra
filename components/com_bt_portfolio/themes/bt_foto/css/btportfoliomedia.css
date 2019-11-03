@@ -1,0 +1,227 @@
+.pmshow,.pmshow  .bt-sliders{
+	position:relative;	
+	overflow:hidden;
+	margin:auto;
+}
+.pmshow .bt-window{
+	position:relative;
+	width:300%;
+	left:-100%;
+}
+.pmshow .bt-header h3{
+	margin:0px;
+	padding:8px 10px;
+	background:darkred;
+}
+.pmshow .bt-header h3 span{
+	text-transform:uppercase;
+	color:#fff;
+}
+.pmshow .bt-slide{
+	position:absolute;
+	width:33.34%;
+	left:33.33%;	
+	overflow:hidden;
+	display:none;
+}
+.pmshow .bt-item{
+	position:relative;
+}
+.pmshow  .bt-mainimg{
+width:100%;
+
+}
+.shadowvideo{
+display: block;
+ position: relative;
+ left: -5%; 
+ width: 110%; height: auto;
+ z-index:4;
+ height:20px;
+}
+.imageshadow{
+display:block;
+position:relative;
+width:100%;
+height:30px;
+z-index:-4;
+bottom:12px;
+
+}
+.pmshow .bt-caption{
+	position:absolute;	
+	width:100%;
+	display:none;
+	z-index:6;
+	
+}
+.pmshow .bt-caption-content{
+	color:#fff;
+	padding:10px;
+	opacity: 0.8;
+	
+}
+.pmshow .bt-caption-content a{
+	color:#fff;
+	text-decoration:none;
+}
+.bt-caption-content .bt-title{
+font-family:'Myriad Pro';
+font-size:18px;
+}
+
+.pmshow .bt-title a{
+	text-transform:uppercase;
+	color:#fff;
+	margin:8px 0;
+	font-size:150%;
+	display:inline-block;
+}
+
+.pmshow .bt-caption-bg{
+	background:#000;
+	opacity:0.5;
+	height:100%;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	z-index:-1;
+}
+.pmshow .bt-handles{	
+    height: 100%;
+    position: absolute; 
+    top: 0;  
+    z-index: 8040;
+}
+.handles-next{
+	right:0px;
+}
+.handles-pre{
+left:0px;
+}
+.pmshow .bt-handles div{
+	width:9px;
+	height:17px;
+	float:left;
+	cursor:pointer;
+	margin:7px;
+}
+.pmshow .bt-handles div.next{
+	background: url("../images/navnext.png") no-repeat scroll center top transparent;
+	position:absolute;
+	top:45%;
+	right:0px;
+	height:23px;
+	width:16px;
+	opacity:0.7;
+}
+.pmshow .bt-handles div.next:hover{
+	background: url("../images/navnext.png") no-repeat scroll center top transparent;
+	opacity:1;
+}
+.pmshow .bt-handles div.prev{
+	background: url("../images/navpre.png") no-repeat scroll center top transparent;
+	position:absolute;
+	top:45%;
+	left:0px;
+	height:23px;
+	width:16px;
+	opacity:0.7;
+}
+.pmshow .bt-handles div.prev:hover{
+	background: url("../images/navpre.png")  no-repeat scroll center top transparent;
+	opacity:1;
+}
+
+/* footer nav */
+.pmshow .bt-footernav{	
+	color:#aeaeae;
+	line-height:150%;
+	color:#e0e0e0;	
+	position:relative;
+	z-index:9;
+}
+.pmshow .bt-footernav .active{
+	box-shadow: 1px 3px 2px #A8A8A8;
+    color: #E4E4E4;
+}
+.pmshow .bt-footernav .bt-title{
+	font-weight:bold;
+}
+.pmshow .bt-footernav .bt-date{
+	color:#727272;
+}
+.pmshow .bt-footernav .active .bt-date{
+	color:red;
+}
+
+.pmshow .bt-nav{
+	float:left;	
+	cursor:pointer;
+	padding:4px;
+	margin:3px;
+	background-image: -webkit-linear-gradient(200deg, #d3d3d3, #fefefe, #d3d3d3);
+	background-image:  -moz-linear-gradient(to top, #d3d3d3, #fefefe) !important;
+	background-color: #d3d3d3!important;
+	position:relative;
+}
+.pmshow .bt-nav-last{
+	
+}
+.pmshow .bt-navpipe{
+	position:relative;
+}
+.bt-video iframe{
+	width:100%;
+	height:100%;
+}
+div.bt-thumb{
+	position: relative;
+}
+div.tooltipthumb {  
+  color: White;
+  position: absolute;
+  
+  max-width: 250px;
+  min-width: 150px;
+ 
+  border-radius: 5px; 
+  background: #1e1e1e;
+  background-image: linear-gradient(to top, #1e1e1e, #010101);
+  z-index:99;
+  text-align: center;
+}
+div.tooltipthumb:before {
+  border-color:  #222222 transparent transparent transparent;
+  border-style: solid;
+  border-width: 6px 6px 6px 6px;
+  content: "";
+  height: 0px;
+  width: 0px;
+  line-height: 0;
+  position: absolute;
+  bottom: -10px;
+  left: 46%;
+    
+}
+div.tooltipthumb p {
+  margin: 1px;
+  color: #FFFFFF;
+  font-size:12px;
+  margin-left:5px;
+ margin-top:3px;
+ opacity:0.9;
+}
+.navicon{
+background: url("../images/previewarrow-16-8-0.png")  no-repeat scroll center top transparent;
+height: 8px;
+left: 45%;
+opacity: 0.4;
+position: absolute;
+top: -8px;
+width: 14px;
+z-index: 9;
+}
+#btportfoliomedia{
+position:relative;
+}

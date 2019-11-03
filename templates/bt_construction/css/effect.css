@@ -1,0 +1,81 @@
+
+
+
+
+
+
+
+
+
+
+
+@keyframes iconSocialAboutUs {
+	from 	{transform: translateY(100%)}
+	to 		{transform: translateY(0);}
+}
+@-o-keyframes iconSocialAboutUs {
+	from 	{ -o-transform: translateY(100%)}
+	to 		{ -o-transform: translateY(0);}
+}
+@-moz-keyframes iconSocialAboutUs {
+	from  	{ -moz-transform: translateY(100%)}
+	to 		{ -moz-transform: translateY(0); }
+}
+@-webkit-keyframes iconSocialAboutUs {
+	from 	{-webkit-transform: translateY(100%)}
+	to 		{-webkit-transform: translateY(0);}
+}
+
+
+@keyframes iconSocialHover {
+	from 	{transform: translateY(100%)}
+	to 		{transform: translateY(0);}
+}
+@-o-keyframes iconSocialHover {
+	from 	{ -o-transform: translateY(100%)}
+	to 		{ -o-transform: translateY(0);}
+}
+@-moz-keyframes iconSocialHover {
+	from  	{ -moz-transform: translateY(100%)}
+	to 		{ -moz-transform: translateY(0); }
+}
+@-webkit-keyframes iconSocialHover {
+	from 	{-webkit-transform: translateY(100%)}
+	to 		{-webkit-transform: translateY(0);}
+}
+
+
+a.iconLink:hover .fa {
+    animation: 0.35s ease 0s normal none 1 running iconSocialHover;
+	-o-animation: 0.35s ease 0s normal none 1 running iconSocialHover;
+	-ms-animation: 0.35s ease 0s normal none 1 running iconSocialHover;
+	-webkit-animation: 0.35s ease 0s normal none 1 running iconSocialHover;
+    color: #fff;
+}
+
+
+
+
+.block2Social a:hover:before{
+	animation: 0.35s ease 0s normal none 1 running iconSocialAboutUs;
+	-o-animation: 0.35s ease 0s normal none 1 running iconSocialAboutUs;
+	-ms-animation: 0.35s ease 0s normal none 1 running iconSocialAboutUs;
+	-webkit-animation: 0.35s ease 0s normal none 1 running iconSocialAboutUs;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

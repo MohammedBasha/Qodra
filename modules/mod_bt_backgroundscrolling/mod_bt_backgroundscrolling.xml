@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>BT Background Scrolling</name>
+    <creationDate>Jan 2014</creationDate>
+    <author>www.bowthemes.com</author>
+    <copyright>Copyright (C) 2012 Bowthemes. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@bowthemes.com</authorEmail>
+    <authorUrl>http://www.bowthemes.com</authorUrl>
+    <version>1.0.0</version>
+	<description>BT Background Scrolling</description>
+	<files>
+		<filename module="mod_bt_backgroundscrolling">mod_bt_backgroundscrolling.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_bt_backgroundscrolling.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="height"
+					type="text"
+					label="MOD_BT_BACKGROUNDSCROLLING_HEIGHT"
+					description="MOD_BT_BACKGROUNDSCROLLING_HEIGHT_DESC" 
+					default="300">
+				</field>
+				<field
+					name="speedFactor"
+					type="text"
+					label="MOD_BT_BACKGROUNDSCROLLING_SPEEDFACTOR"
+					description="MOD_BT_BACKGROUNDSCROLLING_SPEEDFACTOR_DESC" 
+					default="0.1">
+				</field>
+				<field
+					name="background" description="MOD_BT_BACKGROUNDSCROLLING_BG_DESC"
+					type="media"
+					label="MOD_BT_BACKGROUNDSCROLLING_BG" 
+					default="">
+				</field>
+				
+				<field
+					name="text"
+					type="editor" cols="600" rows="25" width="500"
+					label="MOD_BT_BACKGROUNDSCROLLING_TEXT" 
+					description="MOD_BT_BACKGROUNDSCROLLING_TEXT_DESC"
+					filter="raw"
+					default="">
+				</field>
+				<field
+					name="asset" type="asset" addfieldpath="/modules/mod_bt_backgroundscrolling/assets" >
+				</field>
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

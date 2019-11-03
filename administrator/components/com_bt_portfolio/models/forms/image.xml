@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details">
+		
+		<field name="title" type="text"
+			label="COM_BT_PORTFOLIO_IMAGE_TITLE_LABEL" description="COM_BT_PORTFOLIO_IMAGE_TITLE_DESC"
+			size="40" class="inputbox" required="true" default="" />
+		
+		<field name="default" type="list" label="COM_BT_PORTFOLIO_IMAGE_DEFAULT_LABEL"
+			description="COM_BT_PORTFOLIO_IMAGE_DEFAULT_DESC" class="inputbox" filter="intval"
+			size="1" default="1">
+			<option value="1">
+				JYES</option>
+			<option value="0">
+				JNO</option>
+		</field>
+		
+		<field
+			name="id"
+			type="hidden"
+		/>
+	</fieldset>
+
+</form>

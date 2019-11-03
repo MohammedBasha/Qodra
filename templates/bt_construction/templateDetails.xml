@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>bt_construction</name>
+	<version>1.0</version>
+	<creationDate>30 Mar 2015</creationDate>
+	<author>Bowthemes.com</author>
+	<authorEmail>templates@bowthemes.com</authorEmail>
+	<authorUrl>http://www.bowthemes.com</authorUrl>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<t3>
+		<base>base-bs3</base>
+	</t3>
+	<description>
+		BT Instruction template - Design by Bowthemes.com
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_bt_construction.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_bt_construction.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>background_slideshow</position>
+		<position>bottom_mainbody_1</position>
+		<position>bottom_mainbody_2</position>
+		<position>bottom_mainbody_21</position>
+		<position>bottom_mainbody_3</position>
+		<position>copyright_footer</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>map_contact</position>
+		<position>menu_footer</position>
+		<position>off-canvas</position>
+		<position>portfolio_related</position>
+		<position>portfolio_right</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>serviceDetail</position>
+		<position>serviceDetailRight</position>
+		<position>sidebar-2</position>
+		<position>top_head</position>
+		<position>top_mainbody_1</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend">
+
+			<!-- Sample for add or disable template parameters -->
+			<!--fieldset name="menu_params" label="T3_PARAMS_MEGAMENU">
+				<field name="group_disable" type="t3depend" function="@group">
+					<option for="menu_as_bg" value="no">menu_as_bg</option>
+				</field>
+			</fieldset-->
+			
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="collection">http://update.joomlart.com/service/tracking/list.xml</server>
+	</updateservers>
+
+</extension>

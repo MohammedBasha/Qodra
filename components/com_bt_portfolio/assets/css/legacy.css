@@ -1,0 +1,132 @@
+/** For legacy **/
+.isJ30 .width-100{
+    width: 100%;
+}
+.isJ30 .width-60{
+    width: 60%;
+}
+.isJ30 .width-40{
+    width: 40%;
+}
+.isJ30 .fltlft{
+    float: left;
+}
+.isJ30 .fltrt{
+    float: right;
+}
+.isJ30 .adminform > ul,
+.isJ30 .adminformlist > ul{
+    margin: 0px;
+    padding-right: 20px;
+}
+.isJ30 .adminform > ul > li,
+.isJ30 .adminformlist > ul > li{
+    list-style: none;
+}
+.isJ30 .adminform > ul > li > label{
+    padding: 0 5px 0 0;
+    color: #505050;
+    font-size: 11px;
+    font-weight: bold;
+    max-width: 20%;
+    min-width: 20%;
+    text-align: left;
+    display: block;
+    float: left;
+    margin: 5px 0;
+}
+.isJ30 .pane-sliders .panel{
+    margin-bottom: 3px;
+}
+.isJ30 .pane-sliders .panel h3{
+    margin: 0px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.isJ30 .pane-sliders .panel h3 a:hover{
+    text-decoration: none;
+}
+.isJ30 .panelform .adminformlist{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.isJ30 .panelform .adminformlist > li > label{
+    float: left;
+}
+ 
+.isJ25 .nav-tabs, .nav-pills {
+}
+.isJ25 .nav-tabs:before, .nav-tabs:after, .nav-pills:before, .nav-pills:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.isJ25 .nav-tabs:after, .nav-pills:after {
+    clear: both;
+}
+.isJ25 .nav-tabs > li, .nav-pills > li {
+    float: left;
+	height: 25px;
+    list-style: none;
+}
+.isJ25 .nav-tabs > li > a, .nav-pills > li > a {
+    line-height: 14px;
+    margin-right: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.isJ25 .nav-tabs {
+    border-bottom: 1px solid #DDDDDD;
+	padding:0 0 0 10px;
+	margin: 0px;
+}
+.isJ25 .nav-tabs > li {
+    margin-bottom: -1px;
+}
+.isJ25 .nav-tabs > li > a {
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    line-height: 18px;
+    padding: 10px;
+	text-decoration:none;
+	font-weight:bold;
+}
+.isJ25 .nav-tabs > li > a:hover {
+    border-color: #EEEEEE #EEEEEE #DDDDDD;
+}
+.isJ25 .nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FFFFFF;
+    border-color: #DDDDDD #DDDDDD transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #555555;
+    cursor: default;
+}
+.isJ25 .nav-pills > li > a {
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.isJ25 .adminformlist input[type='text']{
+    padding: 4px 6px;
+    margin: 1px !important;
+}
+.isJ25 .tab-content{
+	clear:both;
+	margin-top:0px;
+}
+.isJ25 .tab-pane.active{
+    display: block;
+}
+.isJ25 .tab-content  fieldset.adminform{
+	margin:0!important;
+	border-top:none;
+}

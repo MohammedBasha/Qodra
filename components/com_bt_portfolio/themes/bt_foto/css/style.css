@@ -1,0 +1,453 @@
+/***** GLOBAL ******/
+.clr{
+	clear:both;
+}
+/*****
+************ LIST PORTFOLIOS ***/
+div.btp-detail-header,
+div.btp-header{
+	background: none;
+	margin-bottom: 0px;
+	height:30px;
+	line-height:30px;
+}
+.btp-cat-title,
+.btp-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-bottom: 8px;	
+	display: inline-block;
+	margin: 0;
+	padding:0 34px 0 0 ;
+	font-size: 18px;
+}
+.btp-cat-title span,
+.btp-title span{
+	display: inline-block;
+	line-height: 21px;
+
+}
+.btp-categories{
+	text-align: right;
+	line-height: 18px;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+.btp-categories a{
+	font-size: 14px;
+	display: inline-block;
+	padding:1px 10px;
+	border-radius:8px;
+	text-decoration:none;
+}
+
+.btp-categories a:hover, .btp-categories a.active {
+    background:grey;
+	color:#fff;
+}
+
+.btp-list{
+	width:100%;
+	overflow:hidden;
+}
+.btp-item{
+	margin:10px 4px 0;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	
+}
+.btp-item  a{
+	display:block;
+}
+
+.btp-item  a span.title-hover,.btp-item  a img.image-frame{
+	display:none;
+	position:absolute;
+	color:#fff;
+	font-size:25px;
+	max-width:300px;
+	margin:5px;
+	margin-top:25px;
+	margin-left:20px;
+	z-index:2;
+}
+.btp-item  a span.title-hover span{
+	background:darkGrey;
+	line-height:25px;
+	padding:5px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+
+/****************** DETAIL PORTFOLIO ******************/
+.btp-cat-title {
+	text-transform: uppercase;
+}
+.btp-cat-title span{
+}
+.btp-detail-title{
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-bottom: 8px;
+	padding-top:5px;
+}
+.btp-direction{
+	float:right;
+	display: inline-block;
+	line-height: 20px;
+	padding-top:10px;
+}
+.btp-direction a{
+	font-size: 14px;
+	display: inline-block;
+	padding:1px 10px;
+	border-radius:8px;
+	text-decoration:none;
+}
+.btp-direction a:hover {
+    background:grey;
+	color:#fff;
+}
+.btp-direction span{
+	display: inline-block;
+}
+.btp-slideshow{
+	padding:10px 0px;
+	margin-bottom:10px;
+	
+
+}
+.btp-slideshow .box_skitter_large{
+	margin:0 auto;
+}
+.btp-detail-desc{
+	margin: 0px 0px;
+	padding: 10px 0px;
+}
+.extrafield-title{
+	color: #a7080c;
+	font-weight: bold;
+}
+.extrafield-value{
+	font-weight: bold;
+}
+.extrafield-value p{
+	margin: 0;
+}
+
+.summary{
+	padding: 0 0 0 22px;
+	
+}
+.summary .extrafield-value{
+	color: #fff;
+	font-weight: normal;
+}
+/*** Rating Style ****/
+.btp-item-voting > a{
+	margin-left:5px;
+}
+
+.btp-rating-background {
+	background: url(../images/star.png) 0 -15px repeat-x !important;
+	overflow: hidden;
+	height: 15px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	float: left;
+}
+.btp-rating-notice {
+	float: left;
+	margin-left: 5px;
+}
+.btp-rating-current {
+	height: 15px;
+	background: url(../images/star.png) 0 0 repeat-x !important;
+}
+.btp-rating-background a {
+	margin-top: -15px;
+	height: 15px;
+	display: block;
+	position: absolute;
+}
+.btp-rating-background a:hover {
+	background: url(../images/star.png) 0 -30px repeat-x !important;
+}
+.box_skitter .btp-zoom-image, .box_skitter .visit-site{
+	position:absolute;
+	top:45%;
+	display:inline-block;
+	width:46px;
+	height:46px;
+	color:#fff;
+}
+.box_skitter .btp-zoom-image{
+	z-index:110;
+	left:45%;
+	background: url("../images/bt-img-zoom-folio-detail.png") no-repeat left top transparent;
+	text-indent:-9999px;
+}
+.box_skitter .btp-zoom-image:hover{
+	background: url("../images/bt-img-zoom-folio-detail.png") no-repeat left -50px transparent;
+	z-index:200;
+}
+.btp-detail .box_skitter .label_skitter{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:101;
+	display:none!important;
+	background:none;
+}
+.btp-detail .container_skitter:hover .label_skitter{
+	display:block!important;
+}
+.box_skitter .visit-site {
+	background: url("../images/bg-visitsite-folio-detail.png") no-repeat left top transparent;
+	text-indent: -9999px;
+	margin-right:5px;
+	padding:0;
+	border:none;
+	left:45%;
+}
+.box_skitter .visit-site:hover {
+	background: url("../images/bg-visitsite-folio-detail.png") no-repeat left -50px transparent;
+}
+
+
+
+/*** Review Form Style  ****/
+.btp-comments{
+	padding: 8px 0px;
+	margin: 0 0 8px;
+}
+.btp-comment-fom{
+	padding: 8px 0px;
+}
+.review-form-title,
+div.btp-comment-head {
+	font-size: 18px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 5px;
+}
+div.btp-comment-head span,
+.review-form-title span{
+	display: inline-block;
+	line-height: 30px;
+}
+.btp-comment-item{
+	margin-bottom: 8px;
+}
+.btp-comment-item > div {
+	padding: 8px 0px;
+	overflow:hidden;
+}
+
+.btp-comment-item .comment-last{
+	border-bottom:none;
+}
+.btp-comment-item-head {
+	padding: 5px 0px;
+}
+.comment-title {
+	font-weight: bold;
+}
+.comment-info{
+	margin-bottom:3px;
+}
+.comment-author {
+	color: #a7080c;
+	font-size: 22px;
+}
+.comment-created{
+	float: right;
+	color: #a7080c;
+}
+.comment-avatar{
+	float:left;
+	margin-right:10px;
+}
+.table_body{
+	clear:both;
+	padding: 0px 0;
+}
+.item-input{
+	float:left;
+	display: inline;
+}
+.item-full{
+	width: 98%;
+}
+.item-label{
+	line-height: 41px;
+	font-weight: bold;
+}
+.item-label label{
+	margin-left: 10px;
+}
+.item-input input,.item-full textarea{
+	padding: 7px 5px;
+	margin: 5px 0;
+}
+textarea.review-content {
+	width: 100%;
+}
+.btp-submit-comment{
+	margin: 5px 0;
+}
+.btp-submit-comment button{
+}
+
+.btp-item{
+	position: relative;
+}
+.iframe-hover{
+	display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.iframe-hover-inner{
+    display: block;
+}
+
+.iframe-hover-inner2{
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: relative;
+	z-index: 3;
+}
+.iframe-hover-inner {
+    border: 4px solid darkgrey;
+	display: block;
+	opacity:0.8
+}
+.btp-item a:hover .iframe-hover-inner2 {
+}
+.iframe-hover-inner2 {
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
+.review_count{
+	margin-left:5px;
+}
+div.print_button{
+	text-align:right;
+}
+@media print {
+div.print_button{display:none;}
+}
+
+/* Custom layout */
+
+.bg-custom-btp-item{
+	display:inline-block;
+	float:left;
+}
+.bg-custom-btp-item.left-item{
+	display:inline-block;
+	float:left;
+}
+.bg-custom-btp-item.right-item{
+	display:inline-block;
+	float:left;
+}
+.custom-btp-template .btp-list .btp-item img{
+	border:none;
+	outline:none;
+	margin:0;
+}
+.custom-btp-template .btp-list .btp-item{
+	float:left;
+	padding:0;
+	border: 1px solid #EDEDED;
+	margin: 0 10px 20px 0px;
+}
+.custom-btp-template .btp{
+	padding:0;
+}
+.custom-btp-template .btp-item > div, btp-item > .btp-item-title{
+	width:100%;
+}
+.custom-btp-template .btp-item-image a.img-link-custom-btp{
+	display:inline-block;
+	line-height:0;
+}
+.custom-btp-template .btp-item-image{
+	position:relative;
+	display:inline-block;
+}
+.custom-btp-template .visit-site ,.custom-btp-template .zoom-img-list-custom-btp{
+	position:absolute;
+	top:40%;
+	text-indent:-9999px;
+	display:none;
+}
+.custom-btp-template .link-div{
+	height:0;
+}
+.custom-btp-template .btp-item-image:hover .visit-site ,.custom-btp-template .btp-item-image:hover .zoom-img-list-custom-btp{
+	display:inline-block;
+}
+.custom-btp-template .zoom-img-list-custom-btp{
+
+	background: url("../images/bt-img-zoom-folio-detail.png") no-repeat scroll left top transparent;
+    border: medium none;
+    height: 46px;
+    padding: 0;
+    width: 46px;
+}
+
+
+.custom-btp-template .zoom-img-list-custom-btp:hover{
+	background: url("../images/bt-img-zoom-folio-detail.png") no-repeat scroll left -50px transparent;
+}
+.custom-btp-template .visit-site {
+
+    background: url("../images/bg-visitsite-folio-detail.png") no-repeat scroll left top transparent;
+    border: medium none;
+    height: 46px;
+    margin-left: 5px;
+    padding: 0;
+    width: 46px;
+}
+.custom-btp-template .visit-site:hover{
+    background: url("../images/bg-visitsite-folio-detail.png") no-repeat scroll left -50px transparent;
+}
+.custom-btp-template .btp-item-content1{
+	padding:0;
+	padding: 5px 0;
+	overflow:hidden;
+	display:block;
+}
+.custom-btp-template .btp-item-title{
+	padding:0 3px;
+}
+.custom-btp-template .btp-item-voting{
+	padding:5px 3px;
+}
+.btp-direction .back,.btp-direction .visit-site{
+	float:right;
+}
+#iconyoutube{
+	width:110px;
+	height:55px;
+	background:url("../images/iconvideo.png")no-repeat;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	cursor:pointer;
+}

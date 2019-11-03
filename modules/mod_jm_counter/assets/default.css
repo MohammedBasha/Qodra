@@ -1,0 +1,110 @@
+.jmm-counter.default .jmm-mod-row {
+	margin: -15px
+}
+
+.jmm-counter.default .jmm-mod-row:before,
+.jmm-counter.default .jmm-mod-row:after {
+	display: table;
+	content: "";
+	line-height: 0
+}
+
+.jmm-counter.default .jmm-mod-row:after {
+	clear: both
+}
+
+.jmm-counter.default .jmm-mod-row > div {
+	float: left;
+	padding: 15px;
+	box-sizing: border-box
+}
+
+html[dir='rtl'] .jmm-counter.default .jmm-mod-row > div {
+	float: right;
+}
+
+.jmm-counter.default .jmm-mod-row.row-1 > div {
+	width: 100%
+}
+
+.jmm-counter.default .jmm-mod-row.row-2 > div {
+	width: 50%
+}
+
+.jmm-counter.default .jmm-mod-row.row-3 > div {
+	width: 33.33%
+}
+
+.jmm-counter.default .jmm-mod-row.row-4 > div {
+	width: 25%
+}
+
+.jmm-counter.default .jmm-mod-row.row-5 > div {
+	width: 20%
+}
+
+.jmm-counter.default .jmm-mod-row.row-6 > div {
+	width: 16.66%
+}
+
+.jmm-counter.default .jmm-mod-row.row-7 > div {
+	width: 14.28%
+}
+
+.jmm-counter.default .jmm-mod-row.row-8 > div {
+	width: 12.5%
+}
+
+.jmm-counter.default .jmm-mod-row.row-9 > div {
+	width: 11.11%
+}
+
+.jmm-counter.default .jmm-mod-row.row-10 > div {
+	width: 10%
+}
+
+.jmm-counter.default .jmm-mod-row.row-11 > div {
+	width: 9.09%
+}
+
+.jmm-counter.default .jmm-mod-row.row-12 > div {
+	width: 8.33%
+}
+
+.jmm-counter.default .jmm-item {
+	text-align: center
+}
+
+.jmm-counter.default .jmm-icon {
+	margin-bottom: 10px;
+}
+
+.jmm-counter.default .jmm-icon img {
+	max-width: 100%;
+	height: auto;
+}
+
+.jmm-counter.default .jm-count {
+	font-size: 64px;
+	line-height: 1.1;
+}
+
+.jmm-counter.default .jmm-subtitle {
+	margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+	.jmm-counter.default .jmm-mod-row.row-2 > div,
+	.jmm-counter.default .jmm-mod-row.row-3 > div,
+	.jmm-counter.default .jmm-mod-row.row-4 > div,
+	.jmm-counter.default .jmm-mod-row.row-5 > div,
+	.jmm-counter.default .jmm-mod-row.row-6 > div,
+	.jmm-counter.default .jmm-mod-row.row-7 > div,
+	.jmm-counter.default .jmm-mod-row.row-8 > div,
+	.jmm-counter.default .jmm-mod-row.row-9 > div,
+	.jmm-counter.default .jmm-mod-row.row-10 > div,
+	.jmm-counter.default .jmm-mod-row.row-11 > div,
+	.jmm-counter.default .jmm-mod-row.row-12 > div {
+		width: 100%;
+	}
+}

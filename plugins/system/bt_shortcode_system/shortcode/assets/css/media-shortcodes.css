@@ -1,0 +1,15 @@
+.bt-media-responsive{
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+}
+.bt-media-responsive iframe{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+}
+.bt-video-responsive video{
+	width: 100%;
+	height: auto;
+}

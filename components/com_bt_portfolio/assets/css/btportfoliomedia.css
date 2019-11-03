@@ -1,0 +1,173 @@
+.fpshow,.fpshow  .bt-sliders{
+	position:relative;	
+	
+}
+.fpshow .bt-window{
+	position:relative;
+	width:300%;
+	left:-100%;
+}
+.fpshow .bt-header h3{
+	margin:0px;
+	padding:8px 10px;
+	background:darkred;
+}
+.fpshow .bt-header h3 span{
+	text-transform:uppercase;
+	color:#fff;
+}
+.fpshow .bt-slide{
+	position:absolute;
+	width:33.34%;
+	left:33.33%;	
+}
+.fpshow .bt-item{
+	position:relative;
+}
+.fpshow  .bt-mainimg{
+width:100%;
+
+}
+.shadowvideo{
+display: block;
+ position: absolute;
+ left: -5%; top: 95%; 
+ width: 110%; height: auto;
+ z-index:4;
+}
+.imageshadow{
+display:block;
+position:relative;
+width:100%;
+height:auto;
+z-index:-4;
+
+}
+.fpshow .bt-caption{
+	position:absolute;
+	bottom:35px;
+	width:100%;
+	display:none;
+	z-index:6;
+	
+}
+.fpshow .bt-caption-content{
+	color:#fff;
+	padding:10px;
+	opacity: 0.8;
+	
+}
+.fpshow .bt-caption-content a{
+	color:#fff;
+	text-decoration:none;
+}
+.bt-caption-content .bt-title{
+font-family:'Myriad Pro';
+font-size:18px;
+}
+
+.fpshow .bt-title a{
+	text-transform:uppercase;
+	color:#fff;
+	margin:8px 0;
+	font-size:150%;
+	display:inline-block;
+}
+
+.fpshow .bt-caption-bg{
+	background:#000;
+	opacity:0.5;
+	height:100%;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	z-index:-1;
+}
+.fpshow .bt-handles{	
+    height: 100%;
+    position: absolute; 
+    top: 0;  
+    z-index: 8040;
+}
+.handles-next{
+	right:0px;
+}
+.handles-pre{
+left:0px;
+}
+.fpshow .bt-handles div{
+	width:9px;
+	height:17px;
+	float:left;
+	cursor:pointer;
+	margin:7px;
+}
+.fpshow .bt-handles div.next{
+	background: url("../images/navnext.png") no-repeat scroll center top transparent;
+	position:absolute;
+	top:45%;
+	right:0px;
+	height:23px;
+	width:16px;
+	opacity:0.7;
+}
+.fpshow .bt-handles div.next:hover{
+	background: url("../images/navnext.png") no-repeat scroll center top transparent;
+	opacity:1;
+}
+.fpshow .bt-handles div.prev{
+	background: url("../images/navpre.png") no-repeat scroll center top transparent;
+	position:absolute;
+	top:45%;
+	left:0px;
+	height:23px;
+	width:16px;
+	opacity:0.7;
+}
+.fpshow .bt-handles div.prev:hover{
+	background: url("../images/navpre.png")  no-repeat scroll center top transparent;
+	opacity:1;
+}
+
+/* footer nav */
+.fpshow .bt-footernav{	
+	color:#aeaeae;
+	line-height:150%;
+	margin-top:20px;
+	color:#e0e0e0;	
+	position:relative;
+}
+.fpshow .bt-footernav .active{
+	color:#e4e4e4;
+	box-shadow:0px 5px 10px #333333;
+	border-color:red transparent transparent;
+	border-style:solid;
+}
+.fpshow .bt-footernav .bt-title{
+	font-weight:bold;
+}
+.fpshow .bt-footernav .bt-date{
+	color:#727272;
+}
+.fpshow .bt-footernav .active .bt-date{
+	color:red;
+}
+
+.fpshow .bt-nav{
+	float:left;	
+	cursor:pointer;
+	padding:7px;
+	margin:3px;
+	background-image: linear-gradient(to top, #d3d3d3, #fefefe);
+	
+}
+.fpshow .bt-nav-last{
+	
+}
+.fpshow .bt-navpipe{
+	position:relative;
+}
+.bt-video iframe{
+	width:100%;
+	height:100%;
+}

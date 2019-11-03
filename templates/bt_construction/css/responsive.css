@@ -1,0 +1,277 @@
+
+
+
+.offCanvasButton{
+	display:none;
+}
+/*====== MAX WIDTH 1200 ======*/
+@media (max-width: 1199px) {
+.mainMenu .t3-navbar{
+	display:none!important;
+}
+.offCanvasButton{
+	display:inline-block;
+}
+.t3-header-inner{
+	min-height:55px;
+}
+.t3-header-inner::before{
+	display:none;
+}
+
+
+
+.sl_small_title{
+	font-size:26px;
+}
+.sl_big_title{
+	font-size:54px;
+}
+.sl_desc{
+	line-height:26px;
+	margin-bottom:30px;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/*====== MAX WIDTH 980 ======*/
+@media (max-width: 979px) {
+.bottom_mainbody_2 .bgscrolling{
+	background-size:auto 100%!important;
+}
+.sl_small_title{
+	font-size:22px;
+}
+.sl_big_title{
+	font-size:48px;
+}
+.sl_desc{
+	line-height:24px;
+	margin-bottom:20px;
+}
+.pageheading-title{
+	font-size:32px;
+}
+.contact-misc-title, .contact-form-big-title{
+	font-size:26px;
+}
+a.backToTop{
+	right: calc(50% - 18px);
+}
+.page-heading{
+	background-size:auto 100%;
+}
+
+}
+
+
+
+
+
+/*====== MAX WIDTH 768 ======*/
+@media (max-width: 767px) {
+.bt_social_icon.topSocialIcon{
+	margin-top:5px;
+}
+.topSocialIcon .socialIcon_pretext{
+	padding:0 0 5px 0;
+	line-height:24px;
+	display:block;
+}
+.bottom_mainbody_2 .bgscrolling{
+	background-size:auto 100%!important;
+}
+.sl_small_title{
+	font-size:20px;
+}
+.sl_big_title{
+	font-size:42px;
+}
+.sl_desc{
+	line-height:20px;
+	margin-bottom:15px;
+}
+.sl_button_style a{
+	font-size:11px;
+	height:37px;
+	line-height:33px;
+}
+.we-intro-img{
+	float:none;
+}
+.we-intro-box{
+	margin-left:0;
+}
+.sc_right_desc, .sc_blogspost_desc{
+	display:block;
+	line-height:22px;
+	margin:10px 0 0 0;
+}
+.sc_right_desc{
+	text-align:right;
+}
+.btsc-iconbox-icon {
+    padding-top: 0;
+}
+.btsc-iconbox-description {
+    padding-bottom: 15px;
+}
+.articleAboutUs_block1 .colRight h3{
+	font-size:22px;
+}
+.articleAboutUs_block1 .col-xs-12 + .col-xs-12{
+	padding-top:30px;
+}
+.rowBlock2Item{
+	padding:20px!important;
+}
+.rowBlock2Item + .rowBlock2Item{
+	border-top:1px solid #f1f1f1;
+}
+.bt_foto_list a span.title-hover,
+.customLayout .bt-inner a.bt-title{
+	padding-top:50px;
+	font-size:20px;
+}
+.bt_foto_list .btp-item:hover a span.title-hover,
+.customLayout .bt-inner-1:hover a.bt-title{
+    padding-top: 32px;
+}
+.btp_list_details_text,
+.customLayout .readmore a{
+	margin-top:8px;
+	height:31px;
+	line-height:31px;
+}
+.pageheading-title{
+	font-size:28px;
+}
+.btp_details_body .col-xs-12 + .col-xs-12{
+	padding-top:30px;
+}
+.contact-misc-title, .contact-form-big-title{
+	font-size:24px;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/*====== MAX WIDTH 480 ======*/
+@media (max-width: 479px) {
+.block2UserAvt{
+	float:none;
+}
+.block2UserAvt + .block2UserInfo{
+	margin:15px 0 0 0;
+	text-align:center;
+}
+.servicesItem_left{
+	float:none;
+}
+.servicesItem_left + .servicesItem_body {
+    margin: 0;
+}
+.pageheading-title{
+	font-size:24px;
+}
+div.catItemDateCreated:before, div.catItemCommentsLink:before, 
+div.userItemCommentsLink:before, div.published:before, 
+div.category-name:before, div.hits:before,
+div.itemDateCreated:before, div.itemCommentsLink-wap:before, div.itemCategory:before{
+	padding:0 3px;
+}
+
+div.itemAuthorBlock img.itemAuthorAvatar,
+div.itemListCategory img, div.userBlock img{
+	float:none;
+	margin:0;
+}
+div.itemListCategoriesBlock, div.userBlock{
+	padding:15px;
+}
+.userBlock .userBlockInfo{
+	margin:20px 0 0 0;
+}
+div.itemAuthorBlock div.itemAuthorDetails{
+	margin:20px 0 0 0;
+}
+div.itemComments ul.itemCommentsList li img{
+	width:80px;
+}
+div.itemComments ul.itemCommentsList li{
+	padding:15px;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

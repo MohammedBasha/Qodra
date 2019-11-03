@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_bt_portfolio/models/rules">
+	<fieldset name="details">
+		<field name="title" type="text" label="COM_BT_PORTFOLIO_CATEGORY_TITLE_LABEL"
+			description="COM_BT_PORTFOLIO_CATEGORY_TITLE_DESC" size="40" class="inputbox"
+			required="true" default="" />
+		<field name="alias" type="text" label="COM_BT_PORTFOLIO_CATEGORY_ALIAS_LABEL"
+			description="COM_BT_PORTFOLIO_CATEGORY_ALIAS_DESC" size="40" class="inputbox"
+			default="" />
+		<field name="parent_id" type="portfoliocategory" class="inputbox"
+			default="" label="COM_BT_PORTFOLIO_CATEGORY_PARENT_LABEL"
+			description="COM_BT_PORTFOLIO_CATEGORY_PARENT_DESC" required="true">
+			<option value="0">JNONE</option>
+		</field>
+		<field name="ordering" type="categoryordering" label="JFIELD_ORDERING_LABEL"
+			description="JFIELD_ORDERING_DESC" class="inputbox" default="0" />
+
+		<field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC" class="inputbox" size="1" />
+
+		<field name="language" type="contentlanguage" label="JFIELD_LANGUAGE_LABEL"
+			description="COM_BT_PORTFOLIO_FIELD_LANGUAGE_DESC" class="inputbox">
+			<option value="*">JALL</option>
+		</field>
+		<field name="published" type="list" label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC" class="inputbox" filter="intval"
+			size="1" default="1">
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+		</field>
+		<field name="id" type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC" size="10" default="0" readonly="true" />
+		<field name="main_image" type="media" directory="bt_portfolio/categories" class="inputbox"
+				hide_none="1" label="COM_BT_PORTFOLIO_CATEGORY_MAIN_IMAGE"
+				size="40"
+				description="COM_BT_PORTFOLIO_CATEGORY_MAIN_IMAGE_DESC" />
+		<field name="description" type="editor" filter="JComponentHelper::filterText"
+			label="COM_BT_PORTFOLIO_PORTFOLIO_DESCRIPTION_LABEL" description="COM_BT_PORTFOLIO_PORTFOLIO_DESCRIPTION_DESC"
+			default="" />
+		<field type="spacer" />
+	</fieldset>
+	<fieldset name="advanced">
+		<field name="extra_fields" type="extrafieldlist"
+			label="COM_BT_PORTFOLIO_EXTRAFIELD_LABEL" multiple="multiple"
+			description="COM_BT_PORTFOLIO_EXTRAFIELD_DESC" class="inputbox" size="20"
+			width="100" />
+		<field name="inherit" type="radio" class="btn-group"
+					label="COM_BT_PORTFOLIO_CATEGORY_INHERIT_LABEL"
+					description="COM_BT_PORTFOLIO_CATEGORY_INHERIT_DESC"
+					default="1">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+		<fields name="params">
+				<field name="show_nav" type="radio" class="btn-group"
+					label="COM_BT_PORTFOLIO_CATEGORY_SHOW_ON_NAVIGATION_LABEL"
+					description="COM_BT_PORTFOLIO_CATEGORY_SHOW_ON_NAVIGATION_DESC"
+					default="1">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>				
+		</fields>
+	</fieldset>
+	<fields name="params">
+	<fieldset name="layout">
+			<field name="layout" type="list" class="bt_control"
+				label="COM_BT_PORTFOLIO_CATEGORY_LAYOUT_LABEL" description="COM_BT_PORTFOLIO_CATEGORY_LAYOUT_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="default">Flat List</option>
+				<option value="grid">Grid List</option>
+				<option value="custom">Custom</option>
+			</field>
+			<field name="cat_column" type="list" class="layout_grid"
+				label="COM_BT_PORTFOLIO_CATEGORY_COLUMN_LABEL"
+				description="COM_BT_PORTFOLIO_CATEGORY_COLUMN_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</field>
+			<field name="show_titlecat" type="list" 
+				label="COM_BT_PORTFOLIO_CATEGORY_SHOW_TITLECAT"
+				description="COM_BT_PORTFOLIO_CATEGORY_SHOW_TITLECAT_DESC"
+				default="">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<field name="show_descat" type="list" 
+				label="COM_BT_PORTFOLIO_CATEGORY_SHOW_DESCAT"
+				description="COM_BT_PORTFOLIO_CATEGORY_SHOW_DESCAT_DESC"
+				default="">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<field name="show_childcat" type="list" 
+				label="COM_BT_PORTFOLIO_CATEGORY_CHILDRENCATEGORIES"
+				description="COM_BT_PORTFOLIO_CATEGORY_CHILDRENCATEGORIES_DESC"
+				default="">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<field name="show_portcat" type="list" 
+				label="COM_BT_PORTFOLIO_CATEGORY_PORTFOLIOSCATEGORY"
+				description="COM_BT_PORTFOLIO_CATEGORY_PORTFOLIOSCATEGORY_DESC"
+				default="">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<!--
+			<field name="show_portsubcat" type="list"
+				label="COM_BT_PORTFOLIO_CATEGORY_PORTFOLIOSINSUB"
+				description="COM_BT_PORTFOLIO_CATEGORY_PORTFOLIOSINSUB_DESC"
+				default="">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			-->
+		<field type="asset" name="asset" path="administrator/components/com_bt_portfolio/models/fields/assets/" />
+		</fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset name="metadata">
+			<field name="page_title" type="text"
+			label="Meta Title" description="Title of page" size="35"
+			class="inputbox" />
+			<field name="metakey" type="textarea"
+			label="JFIELD_META_KEYWORDS_LABEL" description="JFIELD_META_KEYWORDS_DESC"
+			class="inputbox" rows="3" cols="30" />
+
+			<field name="metadesc" type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL" description="JFIELD_META_DESCRIPTION_DESC"
+			class="inputbox" rows="3" cols="30" />
+			<field name="robots"
+				type="list"
+				label="JFIELD_METADATA_ROBOTS_LABEL"
+				description="JFIELD_METADATA_ROBOTS_DESC"
+				>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+				<option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+				<option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+				<option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

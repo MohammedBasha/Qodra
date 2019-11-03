@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+  <layout title="Portfolios List">
+    <message><![CDATA[Portfolios List]]></message>
+  </layout>
+  	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_bt_portfolio/models/fields">
+			 <field name="catid" type="PortfolioCategory" class="inputbox" default="" label="COM_BT_PORTFOLIO_PORTFOLIO_CATEGORY_LABEL" description="COM_BT_PORTFOLIO_PORTFOLIO_CATEGORY_DESC">
+			<option value="0">JALL</option>
+		  </field>
+		</fieldset>
+	</fields>
+   <fields name="params">
+		<fieldset name="layout" label="COM_BT_PORTFOLIO_CATEGORY_LAYOUT_OPTIONS">
+		<field name="theme" type="btthemes" path="components/com_bt_portfolio/themes"
+			label="COM_BT_PORTFOLIO_CONFIG_THEME_LABEL" description="COM_BT_PORTFOLIO_CONFIG_THEME_DESC"
+			default="">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+		</field>
+		<field name="layout" type="list" class="bt_control"
+			label="COM_BT_PORTFOLIO_CATEGORY_LAYOUT_LABEL" description="COM_BT_PORTFOLIO_CATEGORY_LAYOUT_DESC">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="default">Flat List</option>
+			<option value="grid">Grid List</option>
+			<option value="custom">Custom</option>
+		</field>
+		<field name="cat_column" type="list" class="layout_grid"
+			label="COM_BT_PORTFOLIO_CATEGORY_COLUMN_LABEL"
+			description="COM_BT_PORTFOLIO_CATEGORY_COLUMN_DESC">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</field>
+		<field name="show_titlecat" type="list" 
+			label="COM_BT_PORTFOLIO_CATEGORY_SHOW_TITLECAT"
+			description="COM_BT_PORTFOLIO_CATEGORY_SHOW_TITLECAT_DESC"
+			default="">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_descat" type="list" 
+			label="COM_BT_PORTFOLIO_CATEGORY_SHOW_DESCAT"
+			description="COM_BT_PORTFOLIO_CATEGORY_SHOW_DESCAT_DESC"
+			default="">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_childcat" type="list" 
+			label="COM_BT_PORTFOLIO_CATEGORY_CHILDRENCATEGORIES"
+			description="COM_BT_PORTFOLIO_CATEGORY_CHILDRENCATEGORIES_DESC"
+			default="">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_portcat" type="list" 
+			label="COM_BT_PORTFOLIO_CATEGORY_PORTFOLIOSCATEGORY"
+			description="COM_BT_PORTFOLIO_CATEGORY_PORTFOLIOSCATEGORY_DESC"
+			default="">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="excluded_portfolio" type="text" label="COM_BT_PORTFOLIO_CATEGORY_EXCLUDED_PORTFOLIOS" description="COM_BT_PORTFOLIO_CATEGORY_EXCLUDED_PORTFOLIOS_DESC" />
+		</fieldset>
+	</fields>
+
+</metadata>

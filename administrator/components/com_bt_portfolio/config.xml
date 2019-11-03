@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="display_options" label="COM_BT_PORTFOLIO_CONFIG_DISPLAY_OPTIONS_LABEL"
+		addfieldpath="/administrator/components/com_bt_portfolio/models/fields">
+		<field type="spacer" label="THEMES OPTIONS:" />
+		<field name="theme" type="btthemes" path="components/com_bt_portfolio/themes"
+			label="COM_BT_PORTFOLIO_CONFIG_THEME_LABEL" description="COM_BT_PORTFOLIO_CONFIG_THEME_DESC"
+			default="default">
+		</field>
+		<field name="show_social_share" type="radio" class="btn-group bt_control" 
+			label="COM_BT_PORTFOLIO_CONFIG_SHOW_SOCIAL_SHARE_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SHOW_SOCIAL_SHARE_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="social_share_buttons" type="list" class="show_social_share_1"
+			label="COM_BT_PORTFOLIO_CONFIG_SOCIAL_SHARE_BUTTON_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_SOCIAL_SHARE_BUTTON_DESC"
+			default="" multiple="true" size="8">
+			<option value="1">Twitter</option>
+			<option value="2">Google Plus</option>
+			<option value="3">LinkedIn</option>
+			<option value="4">Share Email</option>
+			<option value="5">Facebook Share</option>
+			<option value="6">Facebook Send</option>
+			<option value="7">Facebook Like</option>
+			<option value="8">Facebook Recommend</option>
+			<option value="9">Pinterest</option>
+		</field>
+		<field name="show_url" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_SHOW_URL_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SHOW_URL_DESC"
+			default="1">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="show_zoom_image" type="radio" class="btn-group bt_control"
+			label="COM_BT_PORTFOLIO_CONFIG_SHOW_ZOOM_IMAGE" description="COM_BT_PORTFOLIO_CONFIG_SHOW_ZOOM_IMAGE_DESC"
+			default="1">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="zoom_image_type" type="list" default="original" class="show_zoom_image_1"
+			label="COM_BT_PORTFOLIO_CONFIG_ZOOM_IMAGE_TYPE" description="COM_BT_PORTFOLIO_CONFIG_ZOOM_IMAGE_TYPE_DESC">
+			<option value="large">Large image</option>
+			<option value="original">Original image</option>		
+		</field>
+		<field name="show_cat_navigation" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CATEGORY_SHOW_NAVIGATION_ON_TOP_LABEL"
+			description="COM_BT_PORTFOLIO_CATEGORY_SHOW_NAVIGATION_ON_TOP_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field type="spacer" label="LISTING OPTIONS:" />
+		<field name="paging" type="list" default="30"
+			label="COM_BT_PORTFOLIO_CONFIG_PAGING" description="COM_BT_PORTFOLIO_CONFIG_PAGING_DESC">
+			<option value="0">JGLOBAL_USE_GLOBAL</option>
+			<option value="5">5</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			<option value="50">50</option>
+			<option value="100">100</option>
+		</field>
+		<field name="i_ordering" type="list" default="default"
+			label="COM_BT_PORTFOLIO_CONFIG_IMAGE_ORDERING" description="COM_BT_PORTFOLIO_CONFIG_IMAGE_ORDERING_DESC">
+			<option value="default">Default - Ordering</option>
+			<option value="title">Title</option>
+			<option value="id">Created</option>
+			<option value="ordering">Ordering</option>
+			<option value="random">Random</option>
+		</field>
+		<field name="i_ordering_dir" type="list" default="ASC"
+			label="COM_BT_PORTFOLIO_CONFIG_IMAGE_ORDERING_DIR" description="COM_BT_PORTFOLIO_CONFIG_IMAGE_ORDERING_DIR_DESC">
+			<option value="DESC">Desc</option>
+			<option value="ASC">Asc</option>		
+		</field>
+		<field name="p_ordering" type="list" default="ordering"
+			label="COM_BT_PORTFOLIO_CONFIG_PORTFOLIO_ORDERING" description="COM_BT_PORTFOLIO_CONFIG_PORTFOLIO_ORDERING_DESC">
+			<option value="id">ID</option>
+			<option value="title">Title</option>
+			<option value="featured">Featured</option>
+			<option value="hits">Hits</option>
+			<option value="ordering">Ordering</option>
+			<option value="vote_count">Rating</option>
+			<option value="vote_sum">Rating Count</option>
+			<option value="review_count">Review Count</option>
+			<option value="created">Created</option>
+			<option value="modified">Modified</option>
+			<option value="random">Random</option>
+		</field>
+		<field name="p_ordering_dir" type="list" default="ASC"
+			label="COM_BT_PORTFOLIO_CONFIG_PORTFOLIO_ORDERING_DIR" description="COM_BT_PORTFOLIO_CONFIG_PORTFOLIO_ORDERING_DIR_DESC">
+			<option value="DESC">Desc</option>
+			<option value="ASC">Asc</option>		
+		</field>
+		<field name="c_ordering" type="list" default="ordering"
+			label="COM_BT_PORTFOLIO_CONFIG_CAT_ORDERING" description="COM_BT_PORTFOLIO_CONFIG_CAT_ORDERING_DESC">
+			<option value="id">ID</option>
+			<option value="title">Title</option>
+			<option value="ordering">Ordering</option>
+		</field>
+		<field name="c_ordering_dir" type="list" default="DESC"
+			label="COM_BT_PORTFOLIO_CONFIG_CAT_ORDERING_DIR" description="COM_BT_PORTFOLIO_CONFIG_CAT_ORDERING_DIR_DESC">
+			<option value="DESC">Desc</option>
+			<option value="ASC">Asc</option>		
+		</field>
+
+		<field type="spacer" label="CATEGORY LAYOUT:" />
+		<field name="layout" type="list" default="default" class="bt_control"
+			label="COM_BT_PORTFOLIO_CATEGORY_LAYOUT_LABEL" description="COM_BT_PORTFOLIO_CATEGORY_LAYOUT_DESC">
+			<option value="default">Flat list</option>
+			<option value="grid">Grid list</option>
+			<option value="custom">Custom</option>
+		</field>
+		<field name="cat_column" type="list" class="layout_grid"
+			label="COM_BT_PORTFOLIO_CATEGORY_COLUMN_LABEL"
+			description="COM_BT_PORTFOLIO_CATEGORY_COLUMN_DESC"
+			default="3">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</field>
+		<field name="show_titlecat" type="list" 
+					label="COM_BT_PORTFOLIO_CATEGORY_SHOW_TITLECAT"
+					description="COM_BT_PORTFOLIO_CATEGORY_SHOW_TITLECAT_DESC"
+					default="1">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+		</field>
+		<field name="show_descat" type="list" 
+			label="COM_BT_PORTFOLIO_CATEGORY_SHOW_DESCAT"
+			description="COM_BT_PORTFOLIO_CATEGORY_SHOW_DESCAT_DESC"
+			default="0">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_childcat" type="list" 
+			label="COM_BT_PORTFOLIO_CATEGORY_CHILDRENCATEGORIES"
+			description="COM_BT_PORTFOLIO_CATEGORY_CHILDRENCATEGORIES_DESC"
+			default="0">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_portcat" type="list" 
+			label="COM_BT_PORTFOLIO_CATEGORY_PORTFOLIOSCATEGORY"
+			description="COM_BT_PORTFOLIO_CATEGORY_PORTFOLIOSCATEGORY_DESC"
+			default="1">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field type="spacer" label="IMAGE OPTIONS:" />		
+		<field type="list" name="largeimgprocess" class="bt_control" default ="0" label="COM_BT_PORTFOLIO_CONFIG_LARGEIMGPROCESS_LABEL" description= "COM_BT_PORTFOLIO_CONFIG_LARGEIMGPROCESS_DESC">
+			<option value="-1">None</option>
+			<option value="1">Crop</option>
+			<option value="0">Resize</option>
+			<option value="2">Resize and Keep ratio</option>
+		</field>
+		<field type="list" name="thumbimgprocess" default="1" label="COM_BT_PORTFOLIO_CONFIG_THUMBIMGPROCESS_LABEL" description="COM_BT_PORTFOLIO_CONFIG_THUMBIMGPROCESS_DESC">
+			<option value="-1">None</option>
+			<option value="1">Crop</option>
+			<option value="0">Resize</option>
+			<option value="2">Resize and Keep ratio</option>
+		</field>
+		<field name="crop-position" type="list" 
+			label="COM_BT_PORTFOLIO_CONFIG_CROP_POSITION_LABEL"  description="COM_BT_PORTFOLIO_CONFIG_CROP_POSITION_DESC"
+			default="c">
+			<option value="tl">Top-Left	</option>
+			<option value="tm">Top-Middle</option>
+			<option value="tr">Top-Right</option>
+			<option value="bl">Bottom-Left</option>
+			<option value="bm">Bottom-Middle</option>
+			<option value="br">Bottom-Right</option>
+			<option value="c">Center</option>
+		</field>
+		<field name="jpeg-compression" type="text" size="9" default="100"
+			label="COM_BT_PORTFOLIO_CONFIG_JPEG_COMPRESSION_LABEL" description="COM_BT_PORTFOLIO_CONFIG_JPEG_COMPRESSION_DESC" />
+		<field name="crop_width" type="text"
+			label="COM_BT_PORTFOLIO_CONFIG_CROP_WIDTH_LABEL" description="COM_BT_PORTFOLIO_CONFIG_CROP_WIDTH_DESC"
+			default="600">
+		</field>
+		<field name="crop_height" type="text"
+			label="COM_BT_PORTFOLIO_CONFIG_CROP_HEIGHT_LABEL" description="COM_BT_PORTFOLIO_CONFIG_CROP_HEIGHT_DESC"
+			default="400">
+		</field>
+		<field name="thumb_width" type="text"
+			label="COM_BT_PORTFOLIO_CONFIG_THUMB_WIDTH_LABEL" description="COM_BT_PORTFOLIO_CONFIG_THUMB_WIDTH_LABEL"
+			default="336">
+		</field>
+		<field name="thumb_height" type="text"
+			label="COM_BT_PORTFOLIO_CONFIG_THUMB_HEIGHT_LABEL" description="COM_BT_PORTFOLIO_CONFIG_THUMB_HEIGHT_LABEL"
+			default="180">
+		</field>
+
+	</fieldset>
+	<fieldset name="review_options" label="COM_BT_PORTFOLIO_CONFIG_REVIEW_OPTIONS_LABEL">
+		<field type="spacer" label="VOTING SYSTEM:" />
+		<field name="allow_voting" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_ALLOW_VOTING_LABEL" description="COM_BT_PORTFOLIO_CONFIG_ALLOW_VOTING_DESC"
+			default="1">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="allow_guest_vote" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_ALLOW_GUEST_VOTE_LABEL" description="COM_BT_PORTFOLIO_CONFIG_ALLOW_GUEST_VOTE_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field type="spacer" label="COMMENTING SYSTEM:" />
+		<field name="allow_comment" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_ALLOW_COMMENT_LABEL" description="COM_BT_PORTFOLIO_CONFIG_ALLOW_COMMENT_DESC"
+			default="1">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="allow_guest_comment" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_ALLOW_GUEST_COMMENT_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_ALLOW_GUEST_COMMENT_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="auto_publish_comment" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_AUTO_PUBLISH_COMMENT_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_AUTO_PUBLISH_COMMENT_DESC"
+			default="1">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="commentmax_characters" type="text"
+			label="COM_BT_PORTFOLIO_CONFIG_COMMENTMAX_CHARACTERS_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_COMMENTMAX_CHARACTERS_DESC"
+			default="150">
+		</field>
+		<field name="avatars_integrated" type="list"
+			label="COM_BT_PORTFOLIO_CONFIG_AVATAR_INTERGRATED_LABEL" description="COM_BT_PORTFOLIO_CONFIG_AVATAR_INTERGRATED_DESC"
+			default="1">
+			<option value="">COM_BT_PORTFOLIO_CONFIG_AVATAR_INTERGRATED_NONE
+			</option>
+			<option value="k2">K2</option>
+			<option value="cb">Community Builder</option>
+		</field>
+		<field name="comment_displayorder" type="list"
+			label="COM_BT_PORTFOLIO_CONFIG_COMMENT_DISPLAYORDER_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_COMMENT_DISPLAYORDER_DESC"
+			default="desc">
+			<option value="desc">Date descending</option>
+			<option value="asc">Date ascending </option>
+		</field>
+		<field name="number_comments" type="list" default="20"
+			label="COM_BT_PORTFOLIO_CONFIG_NUMBER_COMMENTS_LABEL" description="COM_BT_PORTFOLIO_CONFIG_NUMBER_COMMENTS_DESC">
+			<option value="0">JGLOBAL_USE_GLOBAL</option>
+			<option value="5">5</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			<option value="50">50</option>
+			<option value="100">100</option>
+		</field>
+		<field name="show_website" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_SHOW_WEBSITE_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SHOW_WEBSITE_DESC"
+			default="1">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="show_title" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_SHOW_TITLE_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SHOW_TITLE_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field
+			name="captcha"
+			type="plugins"
+			folder="captcha"
+			default=""
+			label="COM_BT_PORTFOLIO_CONFIG_ENABLED_CAPTCHA_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_ENABLED_CAPTCHA_DESC"
+			filter="cmd" >
+			<option
+				value="">JOPTION_USE_DEFAULT</option>
+			<option
+				value="0">JOPTION_DO_NOT_USE</option>
+		</field>
+		<field name="comment_notification" type="radio" class="btn-group bt_control"
+			label="COM_BT_PORTFOLIO_CONFIG_COMMENT_NOTIFICATION_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_COMMENT_NOTIFICATION_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="email_recipient" type="text" class="comment_notification_1"
+			label="COM_BT_PORTFOLIO_CONFIG_EMAIL_RECIPIENT_LABEL" description="COM_BT_PORTFOLIO_CONFIG_EMAIL_RECIPIENT_DESC"
+			default="">
+		</field>
+		<field type="spacer" label="PLUGINS:" />
+		<field name="comment_system" type="list" class="bt_control"
+			label="COM_BT_PORTFOLIO_CONFIG_COMMENT_SYSTEM_LABEL" description="COM_BT_PORTFOLIO_CONFIG_COMMENT_SYSTEM_DESC"
+			default="none">
+			<option value="none">None
+			</option>
+			<option value="facebook">Facebook
+			</option>
+			<option value="jcomments">JComments 
+			</option>
+			<option value="disqus">Disqus</option>
+		</field>
+		<field name="disqus_shortname" type="text" class="comment_system_disqus"
+			label="COM_BT_PORTFOLIO_CONFIG_DISQUS_SHORTNAME_LABEL" description="COM_BT_PORTFOLIO_CONFIG_DISQUS_SHORTNAME_DESC"
+			default="bowthemes">
+		</field>	
+		<field name="facebook_app_id" type="text" class="comment_system_facebook"
+			label="COM_BT_PORTFOLIO_CONFIG_FACEBOOK_API_ID_LABEL" description="COM_BT_PORTFOLIO_CONFIG_FACEBOOK_API_ID_DESC"
+			default="">
+		</field>
+		<field name="commmentbox_width" type="text" class="comment_system_facebook"
+			label="COM_BT_PORTFOLIO_CONFIG_COMMMENTBOX_WIDTH_LABEL" description="COM_BT_PORTFOLIO_CONFIG_COMMMENTBOX_WIDTH_DESC"
+			default="auto">
+		</field>
+		<field name="commmentbox_numberpost" type="text" class="comment_system_facebook"
+			label="COM_BT_PORTFOLIO_CONFIG_COMMMENTBOX_NUMBERPOST_LABEL" description="COM_BT_PORTFOLIO_CONFIG_COMMMENTBOX_NUMBERPOST_DESC"
+			default="5">
+			<option value="light">Light</option>
+            <option value="dark">Dark</option>
+		</field>
+		<field name="commmentbox_colorscheme" type="list" class="comment_system_facebook"
+			label="COM_BT_PORTFOLIO_CONFIG_COMMMENTBOX_COLORSCHEME_LABEL" description="COM_BT_PORTFOLIO_CONFIG_COMMMENTBOX_COLORSCHEME_DESC"
+			default="light">
+			<option value="light">Light</option>
+            <option value="dark">Dark</option>
+		</field>
+		
+	</fieldset>
+	<fieldset name="slideshow_options"
+		label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_OPTIONS_LABEL">
+		
+		<field name="enable-slideshow" type="list" 
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_ENABLE_LABEL" default="mediaslide">
+			<option value="none">None</option>
+			<option value="skiterslide">Skitter slideshow</option>
+			<option value="mediaslide">Media slideshow</option>
+		</field>
+		<field name="ss_thumb_width" type="text" size="9" default="70"
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_THUMB_WIDTH_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_THUMB_WIDTH_DESC" />
+		<field name="ss_thumb_height" type="text" size="9" default="40"
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_THUMB_HEIGHT_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_THUMB_HEIGHT_DESC" />
+		<field type="spacer" label="MEDIA SLIDESHOW:" />
+		<field name="showtitle" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_MEDIA_SHOWTITLE_LABEL" description="COM_BT_PORTFOLIO_CONFIG_MEDIA_SHOWTITLE_DESC" default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="showdescription" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_MEDIA_SHOWDESCRIPTION_LABEL" description="COM_BT_PORTFOLIO_CONFIG_MEDIA_SHOWDESCRIPTION_DESC" default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="showthumb" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_MEDIA_SHOWTHUMB_LABEL" description="COM_BT_PORTFOLIO_CONFIG_MEDIA_SHOWTHUMB_DESC" default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>		
+		<field name="veffect-slide" type="list"  
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_EFFECT_LABEL" default="fade">
+			<option value="fade">Fade</option>
+			<option value="slide">Slide</option>
+			
+		</field>
+		<field name="effect_time" type="text" 
+			label="COM_BT_PORTFOLIO_CONFIG_EFECT_TIME_LABEL" description="COM_BT_PORTFOLIO_CONFIG_EFECT_TIME_DESC"
+			default="400">
+		</field>
+		<field name="Interval" type="text"
+			label="COM_BT_PORTFOLIO_CONFIG_INTERVAL_LABEL" description="COM_BT_PORTFOLIO_CONFIG_INTERVAL_DESC"
+			default="4000">
+		</field>
+		<field name="sm_background" type="text" size="20" default="000000"
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_BGCOLOR_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_BGCOLOR_DESC" />	
+		<field name="sm_next_back" type="radio" class="btn-group" default="1"
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_BUTTON_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_BUTTON_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		
+		<field type="spacer" label="SKITTER SLIDESHOW:" />		
+		<field name="ss_responsive" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_RESPONSIVE_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_RESPONSIVE_DESC" default="0">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="ss_background" type="text" size="20" default="ffffff"
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_BGCOLOR_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_BGCOLOR_DESC" />	
+		<field name="ss_effect" type="list" default="random" 
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_EFFECT_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_EFFECT_DESC">
+			<option value="cube">cube</option>
+			<option value="cubeRandom">cubeRandom</option>
+			<option value="cubeStop">cubeStop</option>
+			<option value="cubeHide">cubeHide</option>
+			<option value="cubeSize">cubeSize</option>
+			<option value="cubeShow">cubeShow</option>
+			<option value="cubeStopRandom">cubeStopRandom</option>
+			<option value="cubeSpread">cubeSpread</option>
+			<option value="cubeJelly">cubeJelly</option>
+			<option value="horizontal">horizontal</option>
+			<option value="showBars">showBars</option>
+			<option value="upBars">upBars</option>
+			<option value="downBars">downBars</option>
+			<option value="showBarsRandom">showBarsRandom</option>
+			<option value="tube">tube</option>
+			<option value="fade">fade</option>
+			<option value="fadeFour">fadeFour</option>
+			<option value="paralell">paralell</option>
+			<option value="blind">blind</option>
+			<option value="blindHeight">blindHeight</option>
+			<option value="blindWidth">blindWidth</option>
+			<option value="block">block</option>
+			<option value="directionTop">directionTop</option>
+			<option value="directionBottom">directionBottom</option>
+			<option value="directionRight">directionRight</option>
+			<option value="directionLeft">directionLeft</option>
+			<option value="glassCube">glassCube</option>
+			<option value="glassBlock">glassBlock</option>
+			<option value="glassCube">glassCube</option>
+			<option value="glassBlock">glassBlock</option>
+			<option value="random">random</option>
+			<option value="randomSmart">randomSmart</option>
+		</field>
+		<field name="ss_velocity" type="text" size="9" default="1" 
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_VELOCITY_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_VELOCITY_DESC" />
+		<field name="ss_interval" type="text" size="9" default="3500" 
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_INTERVAL_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_INTERVAL_DESC" />
+		<field name="ss_next_back" type="radio" default="1"  class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_BUTTON_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_BUTTON_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="ss_navigation" type="list" 
+			label="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_NAVIGATION_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_SLIDESHOW_NAVIGATION_DESC"
+			default="">
+			<option value="">None</option>
+			<option value="numbers">Numbers</option>
+			<option value="thumbs">Thumbs</option>
+			<option value="dots">Dots</option>
+			<option value="dots_preview">Dots Preview</option>
+		</field>
+		
+	</fieldset>
+	<fieldset name="advanced_options"
+		label="COM_BT_PORTFOLIO_CONFIG_ADVANCED_OPTIONS_LABEL">
+		<field type="spacer" label="UPLOADER:" />
+		<field name="upload_type" type="list"
+			label="COM_BT_PORTFOLIO_CONFIG_UPLOAD_TYPE_LABEL" description="COM_BT_PORTFOLIO_CONFIG_UPLOAD_TYPE_DESC"
+			default="1">
+			<option value="0">COM_BT_PORTFOLIO_CONFIG_UPLOAD_TYPE_SIMPLE
+			</option>
+			<option value="1">COM_BT_PORTFOLIO_CONFIG_UPLOAD_TYPE_ADVANCED
+			</option>
+		</field>
+		<field name="images_path" type="text"
+			label="COM_BT_PORTFOLIO_CONFIG_IMAGES_PATH_LABEL" description="COM_BT_PORTFOLIO_CONFIG_IMAGES_PATH_DESC"
+			default="images/bt_portfolio">
+		</field>		
+		<field type="spacer" label="WATERMARK SYSTEM:" />
+		<field name="wm-enabled" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_ENABLED_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_ENABLED_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="wm-categories" type="PortfolioCategory" multiple="multiple"
+			default="all" label="COM_BT_PORTFOLIO_CONFIG_WM_CATEGORY_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_WM_CATEGORY_DESC">
+			<option value="all">JALL</option>
+		</field>
+		<field name="wm-thumb" type="radio" class="btn-group"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_THUMB_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_THUMB_DESC"
+			default="1">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="wm-type" type="list" class="bt_control"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_TYPE_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_TYPE_DESC"
+			default="img">
+			<option value="msg">COM_BT_PORTFOLIO_CONFIG_WM_TYPE_TEXT
+			</option>
+			<option value="img">COM_BT_PORTFOLIO_CONFIG_WM_TYPE_IMAGE
+			</option>
+		</field>
+		<field name="wm-text" type="text" size="20" default="©bowthemes.com" class="wm_type_msg"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_TEXT_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_TEXT_DESC" />
+		<field name="wm-image" type="media" class="wm_type_img"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_IMAGE_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_IMAGE_DESC" />
+		<field name="wm-font" type="list" class="wm_type_msg"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_FONT_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_FONT_DESC"
+			default="tahoma">
+			<option value="arial">Arial
+			</option>
+			<option value="tahoma">Tahoma
+			</option>
+			<option value="times">Times New Roman
+			</option>
+			<option value="verdana">Verdana
+			</option>
+		</field>
+		<field name="wm-fcolor" type="text" size="20" default="ffffff" class="bt_color wm_type_msg"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_FCOLOR_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_FCOLOR_DESC" />
+		<field name="wm-fsize" type="text" size="20" default="11" class="wm_type_msg"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_FSIZE_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_FSIZE_DESC" />
+		<field name="wm-bg" type="radio" class="btn-group wm_type_msg" label="COM_BT_PORTFOLIO_CONFIG_WM_BG_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_WM_BG_DESC" default="1">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="wm-bgcolor" type="text" size="20" default="000000" class="bt_color wm_type_msg"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_BGCOLOR_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_BGCOLOR_DESC" />
+		<field name="wm-position" type="list"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_POSITION_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_POSITION_DESC"
+			default="br">
+			<option value="tl">COM_BT_PORTFOLIO_CONFIG_WM_POSITION_TOP_LEFT
+			</option>
+			<option value="tr">COM_BT_PORTFOLIO_CONFIG_WM_POSITION_TOP_RIGHT
+			</option>
+			<option value="bl">COM_BT_PORTFOLIO_CONFIG_WM_POSITION_BOTTOM_LEFT
+			</option>
+			<option value="br">COM_BT_PORTFOLIO_CONFIG_WM_POSITION_BOTTOM_RIGHT
+			</option>
+			<option value="c">COM_BT_PORTFOLIO_CONFIG_WM_POSITION_CENTER
+			</option>
+		</field>
+		<field name="wm-padding" type="text" size="20" default="4"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_PADDING_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_PADDING_DESC" />
+		<field name="wm-opacity" type="text" size="20" default="70"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_OPACITY_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_OPACITY_DESC" />
+		<field name="wm-rotate" type="text" size="20" default="0"
+			label="COM_BT_PORTFOLIO_CONFIG_WM_ROTATE_LABEL" description="COM_BT_PORTFOLIO_CONFIG_WM_ROTATE_DESC" />
+		<field type="asset" name="asset" path="administrator/components/com_bt_portfolio/models/fields/assets/" />
+	</fieldset>
+	<fieldset name="printing_options"
+		label="COM_BT_PORTFOLIO_CONFIG_PRINTING_OPTIONS">
+			<field name="show_print" type="radio" class="btn-group"
+				label="COM_BT_PORTFOLIO_CONFIG_SHOW_PRINT_BUTTON_LABEL" description="COM_BT_PORTFOLIO_CONFIG_SHOW_PRINT_BUTTON_DESC"
+				default="0">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="printing_layout" type="editor" height="500" filter="JComponentHelper::filterText"
+			label="COM_BT_PORTFOLIO_CONFIG_PRINTING_LAYOUT_LABEL"
+			description="COM_BT_PORTFOLIO_CONFIG_PRINTING_LAYOUT_DESC"
+			default="&lt;p&gt;&lt;img src=&quot;components/com_bt_portfolio/assets/img/print-logo.png&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;
+&lt;h1 style=&quot;border-bottom: 1px solid #DDDDDD;&quot;&gt;{PORTFOLIO_TITLE}&lt;/h1&gt;
+&lt;p&gt;{REVIEW_SUMMARY}&lt;/p&gt;
+&lt;p&gt;{PORTFOLIO_IMAGE}&lt;/p&gt;
+&lt;table style=&quot;width: 100%; border: none;&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 50%;padding:5px; border: 1px solid #DDDDDD;&quot;&gt;{EXTRA_FIELDS}&lt;/td&gt;
+&lt;td style=&quot;width: 50%;padding:5px; border: 1px solid #DDDDDD;&quot;&gt;{DESCRIPTION}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 style=&quot;border-bottom: 1px solid #DDDDDD;&quot;&gt;Review:&lt;/h3&gt;
+&lt;p&gt;{COMMENT_1}&lt;/p&gt;
+&lt;p&gt;{COMMENT_2}&lt;/p&gt;
+&lt;p&gt;{COMMENT_3}&lt;/p&gt;
+&lt;p&gt;{COMMENT_4}&lt;/p&gt;
+&lt;p&gt;{COMMENT_5}&lt;/p&gt;" />
+	</fieldset>
+</config>

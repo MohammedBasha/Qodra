@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets>
+	<scripts>
+		<file>https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js</file>
+	</scripts>
+	
+	<stylesheets>
+		<file>fonts/font-awesome/css/font-awesome.min.css</file>
+		<file>https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css</file>
+	</stylesheets>
+	
+</assets>

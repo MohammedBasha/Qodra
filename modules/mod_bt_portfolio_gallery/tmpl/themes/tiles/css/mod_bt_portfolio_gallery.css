@@ -1,0 +1,592 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 12, 2014, 3:42:22 PM
+    Author     : duongca
+*/
+
+#grid3d, #grid3d .container, #grid, #grid figure, #grid .mix{
+    margin: 0px;
+    padding: 0px;
+}
+#grid3d .container {
+    border-radius: 0;
+}
+
+#grid .mix {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: none;
+    -webkit-backface-visibility: hidden;
+}
+
+.mod-bt-portfolio-gallery {
+	background-color: #303030;
+}
+
+/* Filter */
+.mod-bt-portfolio-gallery .filters {
+    text-align: center;
+    /*margin-bottom: 50px;*/
+}
+.mod-bt-portfolio-gallery .filters ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mod-bt-portfolio-gallery .filter {
+    display: inline;
+    cursor: pointer;
+    border: 1px solid #464646;
+    background-color: #3e3e3e;
+    padding: 5px 10px;
+    margin: 0 5px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.mod-bt-portfolio-gallery .filter:hover {
+    border: 1px solid #FB5B45;
+}
+
+.mod-bt-portfolio-gallery .active {
+    background-color: #FB5B45;
+}
+
+/* Grid */
+.mod-bt-portfolio-gallery .grid-wrap {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.mod-bt-portfolio-gallery .grid {
+    margin-left: -3px;
+    margin-right: -3px;
+    font-size: 0; /* fix float = none */
+    line-height: 0; /* fix float = none */
+}
+
+.mod-bt-portfolio-gallery figure {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    overflow: hidden;
+    display: none; /* mixitup effect */
+    float: none; /* fix mixitup height animation */
+    font-size: 13px; /* set font size */
+    line-height: 22px; /* set line height */
+}
+
+.mod-bt-portfolio-gallery figure img {
+    width: 100%;
+    height: auto;
+    /*-webkit-filter: grayscale(100%); 
+    -moz-filter: grayscale(100%);
+    filter: gray; filter: grayscale(100%); 
+    filter: url(../images/grayscale.svg#greyscale);*/
+}
+
+.mod-bt-portfolio-gallery figcaption {
+    position: absolute;
+    background-color: #FB5B45;
+    text-align: center;
+    top:0; 
+    bottom:0; 
+    left:0; 
+    right:0; 
+    margin:0; 
+    height:auto; 
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+.mod-bt-portfolio-gallery figcaption:hover {
+    opacity: 1;
+}
+
+.mod-bt-portfolio-gallery .table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.mod-bt-portfolio-gallery .table-cell {
+    display: table-cell;
+    vertical-align:middle;
+}
+
+.mod-bt-portfolio-gallery .title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;    
+}
+
+.mod-bt-portfolio-gallery figcaption:hover .title {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.mod-bt-portfolio-gallery .line {
+    border-top: 1px solid #FFFFFF;
+    height: 1px;
+    width: 80px;
+    margin: 10px auto 3px auto;
+}
+
+.mod-bt-portfolio-gallery .terms {
+    padding: 5px 0 10px 0;
+    margin: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; 
+}
+
+.mod-bt-portfolio-gallery figcaption:hover .terms {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.mod-bt-portfolio-gallery .terms  li {
+    display: inline-block;
+}
+
+.mod-bt-portfolio-gallery .terms li + li:before {
+    content: '|';
+    padding-right: 3px;
+}
+
+/* 3D Effect */
+/* Credit: http://tympanus.net/codrops/2014/03/27/3d-grid-effect */
+.noscroll {
+    overflow: hidden;
+}
+
+.mod-bt-portfolio-gallery .grid-wrap {
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
+}
+
+.mod-bt-portfolio-gallery .grid {
+    position: relative;
+    -webkit-transition: all 0.65s linear;
+    transition: all 0.65s linear;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.mod-bt-portfolio-gallery .view-full .grid {
+    -webkit-transform: translateZ(-1500px);
+    transform: translateZ(-1500px);
+}
+
+.mod-bt-portfolio-gallery .grid .placeholder {
+    width: 25%;
+    height: 25%;
+}
+
+.mod-bt-portfolio-gallery .grid figure {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.mod-bt-portfolio-gallery .grid figure.active {
+    opacity: 0;
+}
+
+.mod-bt-portfolio-gallery .grid .placeholder {
+    pointer-events: none;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.65s linear;
+    transition: all 0.65s linear;
+}
+
+.mod-bt-portfolio-gallery .placeholder > div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.mod-bt-portfolio-gallery .placeholder .front img {
+    width: 100%;
+    height: 100%;
+}
+
+.mod-bt-portfolio-gallery .placeholder .back {
+    background: white;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mod-bt-portfolio-gallery .view-full .placeholder {
+    -webkit-transition: all 0.65s 0.1s linear;
+    transition: all 0.65s 0.1s linear;
+}
+
+.mod-bt-portfolio-gallery .vertical .view-full .placeholder {
+    -webkit-transform: translateZ(1500px) rotateX(-179.9deg);
+    transform: translateZ(1500px) rotateX(-179.9deg); /* FF, Chrome, can we agree on one direction, pleeease? */
+}
+
+.mod-bt-portfolio-gallery .horizontal .view-full .placeholder {
+    -webkit-transform: translateZ(1500px) rotateY(-179.9deg);
+    transform: translateZ(1500px) rotateY(-179.9deg);
+}
+
+.mod-bt-portfolio-gallery .grid figure img {
+    display: block;
+    width: 100%;
+}
+
+.mod-bt-portfolio-gallery .mod-portfolio-content,
+.mod-bt-portfolio-gallery .loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Careful, does not work in IE < 11 http://caniuse.com/#search=pointer-events */
+}
+
+.mod-bt-portfolio-gallery .mod-portfolio-content {
+    /*overflow-y: scroll;*/
+    height: 0; /* What seems to be the problem, officer? Well, we have a second scroll bar in Chrome! */
+    background: #fff;
+    visibility: hidden;
+    z-index: 400;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mod-bt-portfolio-gallery .loading {
+    opacity: 0;
+    z-index: 1;
+    color: #FB5B45;
+    font-size: 3em;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    text-align: center;
+}
+
+.mod-bt-portfolio-gallery .loading.show {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.mod-bt-portfolio-gallery .mod-portfolio-content.show {
+    height: auto;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.mod-bt-portfolio-gallery .mod-portfolio-content > div {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    background: #fff;
+    height: 100%;
+}
+.mod-bt-portfolio-gallery .mod-portfolio-content > div iframe{
+    overflow: auto;
+}
+.mod-bt-portfolio-gallery .mod-portfolio-content > div.show {
+    /*height: auto;*/
+    opacity: 1; 
+    -webkit-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+.mod-bt-portfolio-gallery .close-content {
+    position: fixed;
+    z-index: 1000;
+    top: 20px;
+    right: 7px;
+    font-size: 1.5em;
+    background-color: #FB5B45;
+    color: #fff;
+    cursor: pointer;
+    pointer-events: none;
+    padding: 3px 5px;
+    margin: 10px 25px 0 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.mod-bt-portfolio-gallery .close-content:hover {
+    
+}
+
+.mod-bt-portfolio-gallery .mod-portfolio-content > div.show ~ .close-content {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* content */
+.mod-bt-portfolio-gallery .content-img,
+.mod-bt-portfolio-gallery .content-title,
+.mod-bt-portfolio-gallery .content-detail,
+.mod-bt-portfolio-gallery .content-text {
+    max-width: 1170px;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    padding: 0 15px;
+}
+
+.mod-bt-portfolio-gallery .vertical .content-img,
+.mod-bt-portfolio-gallery .vertical .content-title,
+.mod-bt-portfolio-gallery .vertical .content-detail,
+.mod-bt-portfolio-gallery .vertical .content-text {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+
+.mod-bt-portfolio-gallery .mod-portfolio-content > div.show .content-img,
+.mod-bt-portfolio-gallery .mod-portfolio-content > div.show .content-title,
+.mod-bt-portfolio-gallery .mod-portfolio-content > div.show .content-detail,
+.mod-bt-portfolio-gallery .mod-portfolio-content > div.show .content-text {
+    opacity: 1;
+}
+
+.mod-bt-portfolio-gallery .vertical .mod-portfolio-content > div.show .content-img,
+.mod-bt-portfolio-gallery .vertical .mod-portfolio-content > div.show .content-title,
+.mod-bt-portfolio-gallery .vertical .mod-portfolio-content > div.show .content-detail,
+.mod-bt-portfolio-gallery .vertical .mod-portfolio-content > div.show .content-text {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.mod-bt-portfolio-gallery .content-text:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.mod-bt-portfolio-gallery .content-text:nth-child(3) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.mod-bt-portfolio-gallery .content-img {
+    margin: 30px auto;
+    position: relative;
+}
+
+.mod-bt-portfolio-gallery .content-img img {
+    width: 100%;
+    height: auto;
+}
+
+.mod-bt-portfolio-gallery .content-title {
+    color: #FB5B45;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 26px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.mod-bt-portfolio-gallery .content-detail {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.mod-bt-portfolio-gallery .content-detail-left,
+.mod-bt-portfolio-gallery .content-detail-right {
+    padding: 0;
+    margin: 0;
+    color: #3D3D3D;
+}
+
+.mod-bt-portfolio-gallery .content-detail-right {
+    margin-top: 10px;
+}
+
+.mod-bt-portfolio-gallery .content-text {
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+.mod-bt-portfolio-gallery .content-text:last-child {
+    padding-bottom: 10px;
+}
+
+.mod-bt-portfolio-gallery .content-label {
+    color: #FB5B45;
+    text-transform: uppercase;
+    width: 65px;
+    display: inline-block;
+}
+
+.mod-bt-portfolio-gallery .content-colon {
+    color: #FB5B45;
+    display: inline-block;
+    width: 10px;
+}
+
+.mod-bt-portfolio-gallery .content-field {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.mod-bt-portfolio-gallery .content-field ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.mod-bt-portfolio-gallery .content-field li {
+    display: inline-block;
+}
+
+.mod-bt-portfolio-gallery .content-field li + li:before {
+    content: "/";
+    padding-right: 5px;
+}
+
+.mod-bt-portfolio-gallery .content-quote-title {
+    color: #FB5B45;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-size: 1.3em;
+}
+
+.mod-bt-portfolio-gallery .content-quote-person {
+    color: #FB5B45;
+    margin-top: 20px;
+}
+
+/* Works images swiper */
+.mod-bt-portfolio-gallery .swiper-work-imgs {
+    overflow: hidden;
+}
+
+.mod-bt-portfolio-gallery .swiper-work-imgs .swiper-slide {
+    width: 100%;
+    float: left;
+}
+
+.mod-bt-portfolio-gallery .work-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.mod-bt-portfolio-gallery .work-pagination .swiper-pagination-switch {
+   width: 15px;
+   height: 15px;
+}
+
+.swiper-pagination-switch {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.swiper-active-switch {
+    background-color: #FFFFFF;
+}
+
+
+/* Simple fallback */
+/* if any of these are not supported, a simple fallback will be shown */
+.no-pointerevents .mod-portfolio-content,
+.no-csstransforms3d .mod-portfolio-content,
+.no-csstransitions .mod-portfolio-content,
+.no-pointerevents .mod-portfolio-content > div,
+.no-csstransforms3d .mod-portfolio-content > div,
+.no-csstransitions .mod-portfolio-content > div,
+.no-pointerevents .close-content,
+.no-csstransforms3d .close-content,
+.no-csstransitions .close-content {
+    opacity: 1;
+    visibility: visible;
+    display: none;
+    height: auto;
+}
+
+.no-pointerevents .show .close-content,
+.no-csstransforms3d .show .close-content,
+.no-csstransition .show .close-content,
+.no-pointerevents div.show,
+.no-csstransforms3d div.show,
+.no-csstransitions div.show,
+.no-csstransitions .dummy-img,
+.no-csstransitions .dummy-text,
+.no-csstransforms3d .dummy-img,
+.no-csstransforms3d .dummy-text, 
+.no-pointerevents .dummy-img,
+.no-pointerevents .dummy-text {
+    display: block !important;
+    opacity: 1;
+}
+
+/**************************/
+#mod-bt-portfolio-gallery .hide-btn{
+    display: none;
+}
+#mod-bt-portfolio-gallery .show-btn{
+    display: inline-block;
+}
+
+#mod-bt-portfolio-gallery{
+    color: #ffffff;
+    font-family: 'Raleway','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+#mod-bt-portfolio-gallery .hide{
+    display: none;
+}
+
+#mod-bt-portfolio-gallery .icon.close-content{
+    background: url('../images/close.png') center no-repeat transparent;
+    width: 24px;
+    height: 27px;
+}
+
+#mod-bt-portfolio-gallery .loading{
+    background: url('../images/loading.gif') center no-repeat transparent;
+}
+
+#mod-bt-portfolio-gallery .container{
+    max-width: 100%;
+}

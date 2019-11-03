@@ -1,0 +1,318 @@
+div.catItemHeader h3.catItemTitle a:hover,
+div.userItemHeader h3.userItemTitle a:hover,
+div.tagItemHeader h2.tagItemTitle a:hover,
+h2.latestItemTitle a:hover,
+h2.articleList_title a:hover {
+  color: #ffc000;
+}
+div.catItemReadMore a,
+div.userItemReadMore a,
+div.tagItemReadMore a,
+div.latestItemReadMore a,
+div.articleList_item .readmore a {
+  background: #ffc000;
+}
+div.catItemTagsBlock ul.catItemTags li a:hover,
+div.userItemTagsBlock ul.userItemTags li a:hover,
+div.latestItemTagsBlock ul.latestItemTags li a:hover,
+div.itemTagsBlock ul.itemTags li a:hover {
+  background: #ffc000;
+  border: 1px solid #ffc000;
+  color: #fff;
+}
+h3.itemAuthorName a,
+h2.catTitle span,
+h2.userName span {
+  background: #ffc000;
+}
+h3.itemAuthorName a:before,
+h2.catTitle span:before,
+h2.userName span:before {
+  background: url("../../templates/bt_construction/images/arrow_author.png") no-repeat scroll right top transparent;
+}
+div.itemCommentsForm h3.k2TitleCommentForm:before,
+.itemCommentList h3.itemCommentsCounter:before,
+div.itemAuthorLatest h3:before,
+div.itemRelated h3:before {
+  border: 2px solid #ffc000;
+}
+div.itemCommentsForm form input#submitCommentButton {
+  background: #ffc000;
+}
+ul.my-pagination li.page-number span.pagenav,
+ul.my-pagination li.page-number a.pagenav:hover {
+  background: #ffc000;
+  border: 2px solid #ffc000;
+  color: #fff;
+}
+.t3-footnav .t3-module .module-title {
+  color: #ffc000;
+}
+.defaultLayout .sc_footer .bt-inner .bt-title:hover {
+  color: #ffc000;
+}
+div.k2TagCloudBlock a:hover,
+.t3-sidebar div.k2TagCloudBlock a:hover {
+  border: 1px solid #ffc000;
+  background: #ffc000;
+  color: #fff;
+}
+.footerBlock .nav li a:hover:before,
+.footerBlock .nav li.active > a:before,
+.footerBlock .nav li a:focus:before {
+  color: #ffc000 !important;
+}
+.menuFooter .nav li a:hover,
+.menuFooter .nav li.active > a,
+.menuFooter .nav li a:focus {
+  color: #ffc000 !important;
+}
+.t3-footnav > div:last-child:before {
+  background: #ffc000;
+}
+.mainMenu .t3-megamenu .navbar-nav > li > a {
+  color: #ffc000;
+}
+.t3-header-inner:before {
+  background: #ffc000;
+}
+.sl_button_style a.button_style1,
+.sl_button_style a.button_style2:hover {
+  background: #ffc000;
+  color: #fff;
+}
+.sl_button_style a.button_style1:hover,
+.sl_button_style a.button_style2 {
+  background: #fff;
+  color: #ffc000;
+}
+.btp_list_details_text {
+  background: #ffc000;
+}
+.btp-categories a {
+  border: 2px solid #ffc000;
+}
+.btp-categories a:hover,
+.btp-categories a.active {
+  color: #fff;
+  background: #ffc000;
+}
+.defaultLayout .sc_blogpost .bt-inner .bt-title:hover {
+  color: #ffc000;
+}
+.defaultLayout .sc_blogpost .bt-extra a:hover {
+  color: #ffc000;
+}
+.sc_blogpost_extra a.sc_blogpost_readmore {
+  background: #ffc000;
+  border: 1px solid #ebb100;
+}
+.sc_blogspost_title,
+.sc_blogspost_title:after,
+.sc_right_title,
+.sc_right_title:after {
+  background: #ffc000;
+}
+.sc_blogspost_title:before {
+  background: url("../../templates/bt_construction/images/title_sc_arrow_left.png") no-repeat scroll right top transparent;
+}
+.sc_right_title:before {
+  background: url("../../templates/bt_construction/images/title_sc_arrow_right.png") no-repeat scroll right top transparent;
+}
+.btsc-testimonials-left .btsc-testimonials-info span.btsc-testimonials-name {
+  color: #ffc000;
+}
+.owl-theme .owl-controls .owl-page.active span {
+  background: #ffc000;
+}
+.top_mainbody_1 {
+  background: #ffc000;
+}
+.topMainbody1 .topMainbody1_item:hover {
+  background: #e6ad00;
+}
+.articleAboutUs_block1 .colRight h3 {
+  color: #ffc000;
+}
+.colRightRowItem h4:before {
+  color: #ffc000;
+}
+a.aboutUs_purchase_button {
+  background: #ffc000;
+}
+.block2_title span {
+  background: #ffc000;
+}
+.block2UserName {
+  color: #ffc000;
+}
+.block2Social a {
+  background: #ffc000;
+}
+.t3-sidebar .module-title:before {
+  border-top: 3px solid #ffc000;
+}
+.defaultLayout .sc_sidebar .bt-inner a.bt-title:hover {
+  color: #ffc000;
+}
+.defaultLayout .sc_sidebar .bt-inner .bt-extra {
+  color: #ffc000;
+}
+.accordionLayout .bt-inner .bt-title {
+  backgrounf: #ffc000;
+}
+.accordionLayout .bt-row.actived .bt-inner .bt-title {
+  color: #ffc000;
+}
+.accordionLayout .bt-inner a.bt-title:hover {
+  background: #ffc000;
+  color: #fff;
+}
+.t3-sidebar .t3-module.style2 {
+  background: #ffc000;
+}
+.menu_sidebar .nav li a:hover,
+.menu_sidebar .nav li a:focus,
+.menu_sidebar .nav li.active > a {
+  background: #ffca29;
+}
+.menu_sidebar .nav li a:hover:before,
+.menu_sidebar .nav li a:focus:before,
+.menu_sidebar .nav li.active > a:before {
+  border-right: 6px solid #ffc000;
+}
+h2.servicesItem_title a,
+h2.servicesDetail_title span {
+  background: #ffc000;
+}
+.servicesItem_readmore a {
+  background: #ffc000;
+}
+.bt-spoiler-opened .bt-spoiler-title {
+  color: #ffc000;
+}
+.mainMenu .t3-megamenu .navbar-nav > li.open > a,
+.mainMenu .t3-megamenu .navbar-nav > li.active > a,
+.mainMenu .t3-megamenu .navbar-nav > li > a:hover,
+.mainMenu .t3-megamenu .navbar-nav > li.active > a:focus,
+.mainMenu .t3-megamenu .navbar-nav > li.active > a:hover {
+  color: #fff;
+  background: #ffc000;
+}
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li.open > a,
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li.active > a,
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li > a:hover,
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li.active > a:focus,
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li.active > a:hover,
+.mainMenu .t3-megamenu .dropdown-menu .mega-group .mega-nav > li.active a {
+  color: #ffc000;
+}
+.customLayout .readmore a {
+  background: #ffc000;
+}
+.title_quote {
+  color: #ffc000;
+  border: 2px solid #ffc000;
+}
+.content_quote {
+  background: #ffc000;
+}
+.box_skitter .prev_button:hover,
+.box_skitter .next_button:hover {
+  background: #ffc000;
+}
+.servicesDetailRight_module .menu_sidebar {
+  background: #ffc000;
+}
+a.backToTop {
+  background: #ffc000;
+}
+.we-intro-title h2 {
+  background: #ffc000;
+}
+.we-intro-about {
+  color: #ffc000;
+}
+.we-intro-about span {
+  border: 2px solid #ffc000;
+}
+.we-intro-button a {
+  background: #ffc000;
+}
+.contact-form button.send_button,
+.contact-form button.cancel_button:hover {
+  background: #ffc000;
+}
+.contact-form-big-title span {
+  color: #ffc000;
+  font-weight: bold;
+}
+.contact-misc .btsc-iconbox .btsc-iconbox-title span {
+  font-weight: bold;
+}
+.contact-misc .btsc-iconbox .btsc-iconbox-title {
+  color: #ffc000 !important;
+}
+.we-intro-title h2:before {
+  background: url("../../templates/bt_construction/images/title_sc_arrow_left.png") no-repeat scroll right top transparent;
+}
+.tile-caption-wrapper a.readmore {
+  background: #ffc000;
+}
+.serviceDetailModule h3.module-title {
+  background: #ffc000;
+}
+.socialIcon_pretext span {
+  color: #ffc000;
+}
+.offCanvasButton {
+  background: #ffc000;
+}
+.defaultLayout .sc_blogpost .btcontentshowcase-prev:hover,
+.defaultLayout .sc_blogpost .btcontentshowcase-next:hover,
+.customLayout .btcontentshowcase-prev:hover,
+.customLayout .btcontentshowcase-next:hover {
+  background: url("../../templates/bt_construction/images/bg_control_sc_blogpost-hover.png") no-repeat scroll center center transparent !important;
+}
+.defaultLayout .sc_blogpost .btcontentshowcase-prev:hover:before,
+.defaultLayout .sc_blogpost .btcontentshowcase-next:hover:before,
+.customLayout .btcontentshowcase-prev:hover:before,
+.customLayout .btcontentshowcase-next:hover:before {
+  background: url("../../templates/bt_construction/images/bg_control_sc-blogpost_left-hover.png") no-repeat scroll center center transparent;
+}
+.defaultLayout .sc_blogpost .btcontentshowcase-prev:hover:after,
+.defaultLayout .sc_blogpost .btcontentshowcase-next:hover:after,
+.customLayout .btcontentshowcase-prev:hover:after,
+.customLayout .btcontentshowcase-next:hover:after {
+  background: url("../../templates/bt_construction/images/bg_control_sc-blogpost_right-hover.png") no-repeat scroll center center transparent;
+}
+.defaultLayout .sc_right .btcontentshowcase-prev:hover,
+.defaultLayout .sc_right .btcontentshowcase-next:hover {
+  background: url("../../templates/bt_construction/images/bg_control_sc_right-hover.png") no-repeat scroll center center transparent !important;
+}
+.defaultLayout .sc_right .btcontentshowcase-prev:hover:before,
+.defaultLayout .sc_right .btcontentshowcase-next:hover:before {
+  background: url("../../templates/bt_construction/images/bg_control_sc-right_right-hover.png") no-repeat scroll center center transparent;
+}
+.defaultLayout .sc_right .btcontentshowcase-prev:hover:after,
+.defaultLayout .sc_right .btcontentshowcase-next:hover:after {
+  background: url("../../templates/bt_construction/images/bg_control_sc-right_left-hover.png") no-repeat scroll center center transparent;
+}
+h2.servicesItem_title a:before,
+h2.servicesDetail_title span:before {
+  background: url("../../templates/bt_construction/images/title_sc_arrow_left.png") no-repeat scroll right top transparent;
+}
+.serviceDetailModule h3.module-title:before {
+  background: url("../../templates/bt_construction/images/bg-title-serviceDetail-module.png") no-repeat scroll right bottom transparent;
+}
+.bt-spoiler-opened .bt-spoiler-collapse {
+  background: url("../../templates/bt_construction/images/spoiler_icon_open.png") no-repeat scroll left top transparent;
+}
+.bt_social_icon.topSocialIcon a.iconLink:hover {
+  background: #ffc000;
+  border: 2px solid #ffc000;
+}
+.button_link a:hover {
+  color: #ffc000;
+  background: #fff;
+}

@@ -1,0 +1,2058 @@
+/* ============================================ *
+* General Styles
+* ============================================ */
+
+body,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.footerBlock .nav li a,
+.sc_blogpost_extra a.sc_blogpost_readmore {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ============================================ *
+* Grouping colors Styles
+* ============================================ */
+
+.mainMenu .t3-megamenu .navbar-nav > li.open > a, .mainMenu .t3-megamenu .navbar-nav > li.active > a, .mainMenu .t3-megamenu .navbar-nav > li > a:hover, .mainMenu .t3-megamenu .navbar-nav > li.active > a:focus, .mainMenu .t3-megamenu .navbar-nav > li.active > a:hover, .t3-header-inner::before, .top_mainbody_1, .sc_blogspost_title, .sc_blogspost_title::after {
+    background-color: #3262a3;
+}
+
+.topMainbody1 .topMainbody1_item:hover {
+    background-color: #3675ca;
+}
+
+a,
+.mainMenu .t3-megamenu .navbar-nav > li > a,
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li.open > a,
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li.active > a,
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li > a:hover,
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li.active > a:focus,
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li.active > a:hover,
+.mainMenu .t3-megamenu .dropdown-menu .mega-group .mega-nav > li.active a,
+.defaultLayout .sc_blogpost .bt-inner .bt-title:hover,
+div.catItemHeader h3.catItemTitle a:hover,
+div.userItemHeader h3.userItemTitle a:hover,
+div.tagItemHeader h2.tagItemTitle a:hover,
+h2.latestItemTitle a:hover,
+h2.articleList_title a:hover,
+#k2Container .catItemTitle a:hover {
+    color: #3262a3;
+}
+
+.footerBlock .nav li a:hover::before, .footerBlock .nav li.active > a::before, .footerBlock .nav li a:focus::before {
+    color: #969595 !important;
+}
+
+a:hover, a:focus {
+    color: #3675ca;
+}
+
+/* ============================================ *
+* Top Header Section / top_head Position Styles
+* ============================================ */
+
+.topHead .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding-top: 3px;
+}
+
+.logo {
+    float: none;
+    margin: auto;
+    width: 50%;
+    position: relative;
+}
+
+.bt_social_icon.topSocialIcon {
+    float: right;
+}
+
+.mod-languages {
+    float: right;
+    margin-top: 5px;
+}
+
+.mod-languages li a {
+    height: 36px;
+    width: 36px;
+    line-height: 32px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 1px;
+}
+
+/* ============================================ *
+* Menu Section Styles
+* ============================================ */
+
+.off-canvas-right.off-canvas-effect-4.off-canvas-open .t3-wrapper, .off-canvas-right.off-canvas-effect-4.off-canvas-open .t3-mainnav-android {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.offCanvasButton {
+    background-color: #fa7b0d;
+}
+
+.t3-off-canvas {
+    width: 100%;
+}
+
+.off-canvas-module .nav-pills > .dropdown.parent > .dropdown-menu {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.off-canvas-module .dropdown-submenu > a::after {
+    margin-top: 10px;
+}
+
+.nav .caret {
+    border-top-color: #3262a3;
+    border-bottom-color: #3262a3;
+}
+
+.bt_social_icon.topSocialIcon a.icon_fb:hover, #Mod121 a.icon_fb:hover {
+    background: #3b5998;
+    border: 2px solid #3b5998;
+}
+
+.bt_social_icon.topSocialIcon a.icon_tt:hover, #Mod121 a.icon_tt:hover {
+    background: #55acee;
+    border: 2px solid #55acee;
+}
+
+.bt_social_icon.topSocialIcon a.icon_yt:hover, #Mod121 a.icon_yt:hover {
+    background: #ff0000;
+    border: 2px solid #ff0000;
+}
+
+.bt_social_icon.topSocialIcon a.icon_in:hover, #Mod121 a.icon_in:hover {
+    background-color: #007bb5;
+    border: 2px solid #007bb5;
+}
+
+.t3-header,
+.careers-view.view-article .t3-header {
+    padding: 75px 0 0 0;
+    margin-bottom: 222px;
+}
+
+.mainMenu {
+    position: absolute;
+    right: 0;
+}
+
+.mainMenu .t3-megamenu .navbar-nav > li > a {
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li a {
+    font-size: 16px;
+    color: #333;
+    transition: padding .3s ease-in-out;
+}
+
+.mainMenu .t3-megamenu .dropdown-menu .mega-nav > li a:hover {
+    background-color: #3262a3 !important;
+    color: #fff !important;
+    padding-left: 10px;
+}
+
+.mainMenu .t3-megamenu .dropdown-menu .mega-dropdown-inner .mega-nav > li a:hover::before {
+    color: #fff;
+}
+
+/* ============================================ *
+* Mega Menu Styles
+* ============================================ */
+
+.mainMenu .t3-megamenu .big-mega-menu .dropdown-menu .mega-nav > li a.mega-group-title::before {
+    right: auto;
+    left: 0;
+}
+
+.mainMenu .t3-megamenu .big-mega-menu .dropdown-menu .mega-nav.level1 > li > a:hover {
+    color: #666 !important;
+}
+
+.mainMenu .t3-megamenu .big-mega-menu .dropdown-menu .mega-nav.level1 > li > a:hover {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.mainMenu .t3-megamenu .big-mega-menu .dropdown-menu .mega-nav.level2 > li > a:hover {
+    padding: 5px;
+}
+
+.mainMenu .t3-megamenu .big-mega-menu .dropdown-menu .mega-nav.level2 > li > a {
+    padding: 5px;
+}
+
+.mainMenu .t3-megamenu .big-mega-menu .dropdown-menu .mega-nav.level1 > li > a:hover {
+    background-color: transparent !important;
+    color: #3262a3;
+    padding-right: 0;
+}
+
+/* ============================================ *
+* background_slideshow Position Styles
+* ============================================ */
+
+.background_slideshow {
+    overflow: hidden;
+    height: 625px;
+}
+
+#cp-bg-slide {
+    height: 625px !important;
+}
+
+.has_slideshow .t3-header {
+    margin-bottom: 447px;
+}
+
+.t3-header-inner::before {
+    height: 55px;
+}
+
+/* ================================================================== *
+* top_mainbody_1 Position / topMainbody1 / About us Styles
+* ================================================================== */
+
+.topMainbody1 div.topMainbody1_item {
+    min-height: 581px;
+    cursor: auto;
+}
+
+.btsc-iconbox .icon {
+    width: 60px !important;
+    height: 60px;
+    line-height: 60px !important;
+    font-size: 30px !important;
+}
+
+.btsc-iconbox .btsc-iconbox-title {
+    text-transform: capitalize;
+}
+
+.btsc-iconbox-icon {
+    padding-top: 20px;
+}
+
+.text-none .btsc-iconbox-title {
+    text-transform: none;
+}
+
+.btsc-iconbox-description {
+    font-size: 18px !important;
+    padding-bottom: 20px;
+}
+
+/* ================================================================== *
+* top_mainbody_3 Position / Work Fields Section Styles
+* ================================================================== */
+
+#top_mainbody_3 {
+    padding: 55px 0;
+}
+
+#top_mainbody_3 .bt-inner-2 {
+    overflow: hidden;
+    background-color: transparent;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.defaultLayout .sc_blogpost .bt-inner-body {
+    padding: 0 10px;
+}
+
+.top_mainbody_3 .bt-inner .bt-title {
+    height: 75px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.top_mainbody_3 .bt-inner .bt-introtext {
+    min-height: 85px;
+    max-height: 85px;
+    overflow: hidden;
+    padding: 10px 0 0 !important;
+    font-size: 16px;
+    color: #555;
+}
+
+.sc_blogpost_extra a.sc_blogpost_readmore,
+div.catItemReadMore a,
+div.userItemReadMore a,
+div.tagItemReadMore a,
+div.latestItemReadMore a,
+div.articleList_item .readmore a {
+    font-size: 12px;
+    background-color: #fa7b0d;
+    overflow: hidden;
+    border-radius: 50px;
+    height: 33px;
+    text-transform: uppercase;
+    padding:0 10px 0 42px;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    line-height: 33px;
+}
+
+.sc_blogpost_extra a.sc_blogpost_readmore::before,
+div.catItemReadMore a::before,
+div.userItemReadMore a::before,
+div.tagItemReadMore a::before,
+div.latestItemReadMore a::before,
+div.articleList_item .readmore a::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 38px;
+    transition: width ease-out 0.25s;
+    -o-transition: width ease-out 0.25s;
+    -ms-transition: width ease-out 0.25s;
+    -webkit-transition: width ease-out 0.25s;
+    left: 0;
+    top: 0;
+    background: url("../images/left_readmore.png") no-repeat scroll right top transparent;
+}
+
+.sc_blogpost_extra a.sc_blogpost_readmore::after,
+div.catItemReadMore a::after,
+div.userItemReadMore a::after,
+div.tagItemReadMore a::after,
+div.latestItemReadMore a::after,
+div.articleList_item .readmore a::after {
+    position: absolute;
+    content: 'Read More';
+    text-align: right;
+    height: 100%;
+    width: 38px;
+    transition: width ease-out 0.25s;
+    -o-transition: width ease-out 0.25s;
+    -ms-transition: width ease-out 0.25s;
+    -webkit-transition: width ease-out 0.25s;
+    left: -40px;
+    top: -1px;
+}
+
+.sc_blogpost_extra a.sc_blogpost_readmore:hover::before,
+.sc_blogpost_extra a.sc_blogpost_readmore:hover::after,
+div.catItemReadMore a:hover::before,
+div.catItemReadMore a:hover::after,
+div.userItemReadMore a:hover::before,
+div.userItemReadMore a:hover::after,
+div.tagItemReadMore a:hover::before,
+div.tagItemReadMore a:hover::after,
+div.latestItemReadMore a:hover::before,
+div.latestItemReadMore a:hover::after,
+div.articleList_item .readmore a:hover::before,
+div.articleList_item .readmore a:hover::after {
+    width: 100%;
+}
+
+.sc_blogpost_extra a.sc_blogpost_readmore:hover,
+div.catItemReadMore a:hover,
+div.userItemReadMore a:hover,
+div.tagItemReadMore a:hover,
+div.latestItemReadMore a:hover,
+div.articleList_item .readmore a:hover {
+    color: #fff;
+    background: #f1872e;
+}
+
+/* ================================================================== *
+* 1 / 2 / 5 / 6 Positions / News & Events Section Styles
+* ================================================================== */
+
+.t3-sl-1 {
+    padding: 85px 0 0 0;
+}
+
+.t3-sl-2 {
+    padding-top: 0;
+    padding-bottom: 85px;
+}
+
+.t3-sl-1 .spotlight_inner {
+    background: none;
+}
+
+.t3-sl-1 .t3-module {
+    margin-bottom: 20px;
+}
+
+#Mod145 .we-intro-box {
+    padding: 17px 15px 28px 30px;
+}
+
+.t3-sl-1 .bt-heading h4::before, .t3-spotlight .bt-heading h4::before {
+    transition: all .3s ease-in-out;
+}
+
+.t3-sl-1 .bt-heading h4:hover::before, .t3-spotlight .bt-heading h4:hover::before {
+    width: 100px;
+}
+
+.t3-sl-1 .bt-heading a, .t3-sl-1 .bt-heading a:hover, .t3-spotlight .bt-heading a, .t3-spotlight .bt-heading a:hover {
+    color: #969595;
+    background-color: transparent;
+    display: block;
+}
+
+.t3-sl-1 iframe {
+    display: block;
+}
+
+#Mod142 .we-intro-box, #Mod145 .we-intro-box {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#Mod143, #Mod144 {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.we-intro-box > a {
+    font-size: 12px;
+    background-color: #fa7b0d;
+    overflow: hidden;
+    border-radius: 50px;
+    margin-top: 15px;
+
+    height: 33px;
+    text-transform: uppercase;
+    padding: 0 10px 0 42px;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    line-height: 33px;
+}
+
+.we-intro-box > a::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 38px;
+    transition: all ease-out 0.25s;
+    -o-transition: all ease-out 0.25s;
+    -ms-transition: all ease-out 0.25s;
+    -webkit-transition: all ease-out 0.25s;
+    left: 0;
+    top: 0;
+    background: url("../images/left_readmore.png") no-repeat scroll right top transparent;
+}
+
+.we-intro-box > a::after {
+    position: absolute;
+    content: 'Read More';
+    height: 100%;
+    width: 38px;
+    transition: all ease-out 0.25s;
+    -o-transition: all ease-out 0.25s;
+    -ms-transition: all ease-out 0.25s;
+    -webkit-transition: all ease-out 0.25s;
+    left: -40px;
+    top: -1px;
+}
+
+.we-intro-box > a:hover::before, .we-intro-box > a:hover::after {
+    width: 100%;
+}
+
+.we-intro-box > a:hover::after {
+    left: 14px;
+}
+
+/* ================================================================== *
+* bottom_mainbody_1 / Our Partners Section Styles
+* ================================================================== */
+
+.defaultLayout .sc_blogpost .bt-inner-2 {
+    background-color: transparent;
+}
+
+.sc_blogspost_title {
+    text-transform: capitalize;
+}
+
+#bottom_mainbody_3 .sc_blogpost_extra {
+    display: none;
+}
+
+/* =========================================== *
+* bottom_mainbody_21 Section Styles
+* ============================================ */
+
+.bottom_mainbody_21 {
+    text-align: center;
+    color: #fff;
+    top: 125px;
+}
+
+.bottom_mainbody_21 h2 {
+    font-size: 28px !important;
+    color: #fff !important;
+}
+
+.we-intro-box {
+    margin-left: 0;
+    padding: 57px 15px 28px 30px;
+}
+
+.we-intro-text1 {
+    font-size: 18px;
+    color: #555;
+}
+
+.news-events-date-wrapper {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.date-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.bottom_mainbody_21 .custom p a {
+    font-size: 12px;
+    background: #fa7b0d;
+    display: inline-block;
+    padding: 0 20px;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    height: 28px;
+    line-height: 26px;
+    margin-top: 15px;
+}
+
+.bottom_mainbody_21 .custom p a:hover, .we-intro-box a:hover {
+    color: #fff;
+    background: #f1872e;
+}
+
+.bgscrolling {
+    background-position: 50% -315px !important;
+}
+
+.career-more, .career-more:hover, .career-more:focus {
+    text-decoration: underline;
+    color: #fbbd00;
+}
+
+.statistics-wrapper-hp .jmm-subtitle {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.statistics-wrapper-hp .jmm-item .jmm-timer {
+    position: relative;
+}
+
+.statistics-wrapper-hp .jmm-item .jmm-timer::before {
+    position: absolute;
+    content: '+';
+    left: -35%;
+    top: 13%;
+    font-size: .8em;
+}
+
+.statistics-wrapper-hp .item-4 .jmm-timer::before {
+    left: -95%;
+}
+
+/* ===================================== *
+* Footer Positions Section Styles
+* ======================================= */
+
+.t3-footnav, .t3-footnav .t3-module ul > li > a {
+    font-size: 16px;
+}
+
+.t3-footnav .t3-module .module-title {
+    text-transform: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+.t3-footnav a {
+    color: #969595;
+}
+
+a.backToTop {
+    background-color: #fa7b0d;;
+    right: -4%;
+    transition: all .3s ease-in-out;
+    color: #fff;
+}
+
+a.backToTop:hover, a.backToTop:focus {
+    background-color: #f1872e;
+    color: #fff;
+}
+
+.t3-footnav .t3-module ul > li > a {
+    border-top: 0;
+    transition: padding .3s ease-in-out;
+}
+
+.t3-footnav .t3-module ul > li.active > a,
+.t3-footnav .t3-module ul > li > a:hover {
+    padding-left: 5px;
+}
+
+.t3-footnav > div:nth-child(4)::before {
+    width: auto;
+}
+
+.custom-footer-map iframe {
+    display: block;
+}
+
+/* ===================================== *
+* Copyright Position Section Styles
+* ======================================= */
+
+.copyRight {
+    float: none;
+    text-align: center;
+}
+
+/* ============================================ *
+* Inner Pages Styles
+* ============================================ */
+
+.pageheading-title-inner,
+.pageheading-title-inner::before {
+    background-color: rgba(170, 170, 170, .7);
+}
+
+.pageheading-title-inner::after {
+    right: -56px;
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-right: 36px solid transparent;
+    border-bottom: 36px solid rgba(170, 170, 170, .7);
+    border-left: 20px solid rgba(170, 170, 170, .7);
+    background: none; 
+}
+
+.page-heading-inner {
+    padding-top: 270px;
+}
+
+.view-article .t3-mainbody h3 {
+    font-weight: bold;
+    font-size: 24px;
+}
+.view-article .t3-content h3,
+.view-article .t3-content h2 {
+    color: #fa7b0d;
+}
+
+.view-article .t3-mainbody h3::before {
+    border-color: #fa7b0d;
+}
+
+.view-article .t3-mainbody p,
+.item-page ul {
+    font-size: 17px;
+    color: #000;
+}
+
+.item-page img {
+    margin: 10px;
+}
+
+div.catItemBody,
+div.userItemBody,
+div.tagItemBody,
+div.latestItemBody,
+div.articleList_introtext,
+.k2ItemInfo {
+    padding-top: 0;
+}
+
+/* ============================================ *
+* Who we are view Page Styles
+* ============================================ */
+
+.who-we-are-view.view-article .page-heading {
+    background-image: url(../images/who_we_are.jpg);
+}
+
+.who-we-are-view.item-page img,
+.our-strategic-plan-view.item-page img{
+    border-radius: 8px;
+}
+
+/* ============================================ *
+* Board Members Page Styles
+* ============================================ */
+
+.board-members-view.view-article .page-heading {
+    background-image: url(../images/board_members.jpg);
+}
+
+.board-member {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.board-member h3 {
+    flex-basis: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.board-member h3::before {
+    content: '';
+
+    width: 100%;
+    height: 2px;
+
+    background-color: rgba(0, 0, 0, .5);
+    display: inline-block;
+
+    position: absolute;
+    top: 13px;
+    right: 0;
+    left: 0;
+}
+
+.board-member h3 span {
+    position: relative;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.board-member-img {
+    flex-basis: 22%;
+    margin-right: 3%;
+}
+
+.board-member-img img {
+    width: 60%;
+}
+
+.board-member-details {
+    flex-basis: 75%;
+}
+
+/* ============================================ *
+* Work Fields Pages Styles
+* ============================================ */
+
+#k2Container .itemList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#k2Container .itemContainer {
+    flex-basis: 31.3%;
+    margin-right: 3%;
+}
+
+#k2Container .itemContainer:nth-child(3n+0) {
+    margin-right: 0;
+}
+
+#k2Container .catItemImageBlock,
+div.catItemView,
+div.userItemView,
+div.tagItemView,
+div.latestItemView,
+div.articleList_item {
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#k2Container .catItemImageBlock {
+    height: 230px;
+    overflow: hidden;
+}
+
+#k2Container .itemViewBody {
+    border-left: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+
+#k2Container .catItemTitle a {
+    display: block;
+    height: 72px;
+    overflow: hidden;
+    color: #313131;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* ============================================ *
+* Our strategic plan Page Styles
+* ============================================ */
+
+.our-strategic-plan-view.view-article .page-heading {
+    background-image: url(../images/our-strategic-plan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* ============================================ *
+* Company's Achievements Page Styles
+* ============================================ */
+
+.company-achievements-view.view-article .page-heading {
+    background-image: url(../images/company-achievements.jpg);
+    background-position: center 55%;
+    background-size: cover;
+}
+
+/* ============================================ *
+* Photo Gallery Page Styles
+* ============================================ */
+
+.photo-gallery-view.view-article .page-heading {
+    background-image: url(../images/photo-gallery.jpg);
+    background-position: center 15%;
+    background-size: cover;
+}
+
+.photo-gallery-view .item-page img,
+.news-events-view .item-page img,
+.our-customers-view .item-page img {
+    margin: 0;
+}
+
+.mod-bt-portfolio-gallery {
+    background-color: #3262a3;
+}
+
+.mod-bt-portfolio-gallery figcaption {
+    background-color: #fa7b0d;
+}
+
+.mod-bt-portfolio-gallery .mod-portfolio-content {
+    z-index: 9999999;
+}
+
+/* ============================================ *
+* News & Events Page Styles
+* ============================================ */
+
+.news-events-view.view-article .page-heading {
+    background-image: url(../images/news-events.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.news-events-view .articleList_title {
+    display: none;
+}
+
+.news-events-view .img-fulltext + .articleList_head .articleList_title {
+    display: block;
+    margin-top: 20px;
+}
+
+.customLayout {
+    margin-bottom: 50px;
+}
+
+.customLayout .bt-inner-1 {
+    cursor: text;
+}
+
+.customLayout .readmore a {
+    background: #fa7b0d;
+}
+
+.news-events-view .img-fulltext {
+    overflow: hidden;
+    height: 500px;
+}
+
+.news-events-view .img-fulltext img {
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+
+/* ============================================ *
+* Our Customers Page Styles
+* ============================================ */
+
+.our-customers-view.view-article .page-heading {
+    background-image: url(../images/customers.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.metro-item .mi-back-container, .metro-item div.bt-title {
+    height: 100%;
+    width: 100%;
+}
+
+.metro-item .mi-back .top {
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.metro-item .mi-back .top h5 {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.metro-item .mi-back .top h5 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* ============================================ *
+* Careers Page Styles
+* ============================================ */
+
+.careers-view.view-category .page-heading, .careers-view.view-article .page-heading {
+    background-image: url(../images/careers.jpg);
+    background-size: 120%;
+    background-position: center -27%;
+}
+
+.hide-sidebar-2.view-category .t3-sidebar-right {
+    display: none;
+}
+
+.hide-sidebar-2.view-category #t3-content {
+    width: 100%;
+}
+
+.content-category.careers-view td.list-title {
+    padding: 0;
+}
+
+.content-category.careers-view td.list-title a {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.careers-view td.list-date {
+    font-size: 12px;
+    padding: 12px !important;
+}
+
+/* ============================================ *
+* Career Page Styles
+* ============================================ */
+
+.k2ItemInfo {
+    text-transform: none;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.tag-label {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.fields-container {
+    margin-bottom: 30px;
+}
+
+.field-entry {
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+.field-label {
+    font-weight: bold;
+}
+
+.careers-view .t3-sidebar {
+    padding-top: 0;
+}
+
+.careers-view .t3-sidebar .module-title {
+    color: #3262a3;
+}
+
+.careers-view .t3-sidebar .mod-list a {
+    font-size: 16px;
+}
+
+/* ============================================ *
+* Contact us Page Styles
+* ============================================ */
+
+.contact-us-view.view-contact .page-heading {
+    background-image: url(../images/contact-us.jpg);
+}
+
+.contact.contact-us-view {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-misc-head, .contact-form-small-title {
+    display: none;
+}
+
+.contact-miscinfo, .map_contact {
+    flex-basis: 50%;
+}
+
+.contact-misc .btsc-iconbox .btsc-iconbox-title {
+    color: #fa7b0d !important;
+}
+
+.contact-misc .btsc-iconbox-description {
+    font-size: 15px !important;
+}
+
+.map_contact {
+    position: relative;
+    height: auto;
+}
+
+.map_contact .module-title {
+    color: #3262a3;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.map_contact_inner {
+    height: auto;
+    position: static;
+}
+
+.contact-form-head {
+    margin-top: 30px;
+    flex-basis: 100%;
+}
+
+.contact-form-big-title span {
+    color: #3262a3;
+    position: relative;
+}
+
+.contact-form-big-title span::before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-size: 12px;
+    background-color: #fff;
+    padding: 5px;
+
+    content: "\f003";
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 11px);
+    z-index: 2;
+}
+
+.contact-form-big-title span::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: calc(100% - 125%); 
+    z-index: 1;
+
+    width: 150%;
+    height: 1px;
+    background-color: #3262a3;
+}
+
+.contact-form {
+    flex-basis: 100%;
+}
+
+#contact-form .contact_form_input,
+.contact-form #jform_contact_message,
+#contact-form .contact_form_input.invalid,
+.contact-form #jform_contact_message.invalid {
+    border-width: 2px;
+}
+
+.contact_form_textarea {
+    resize: none;
+}
+
+.contact-form button.send_button,
+.contact-form button.cancel_button:hover {
+    background-color: #fa7b0d;
+}
+
+/* ============================================ *
+* Arabic Styles
+* ============================================ */
+
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap');
+
+.html-ar {
+    overflow-x: hidden;
+    direction: ltr;
+}
+
+.html-ar body,
+.html-ar h1,
+.html-ar h2,
+.html-ar h3,
+.html-ar h4,
+.html-ar h5,
+.html-ar h6,
+.html-ar .h1,
+.html-ar .h2,
+.html-ar .h3,
+.html-ar .h4,
+.html-ar .h5,
+.html-ar .h6,
+.html-ar .footerBlock .nav li a,
+.html-ar .sc_blogpost_extra a.sc_blogpost_readmore {
+    font-family: 'Cairo', sans-serif;
+}
+
+.html-ar .iconLinks,
+.html-ar .mainMenu .t3-navbar .t3-megamenu > ul.nav,
+.html-ar .topMainbody1 div.topMainbody1_item,
+.html-ar .sc_blogspost_title,
+.html-ar .t3-sl-1 .bt-heading a,
+.html-ar .t3-sl-1 .bt-heading,
+.html-ar .we-intro-box,
+.html-ar .t3-footnav .t3-module .module-title,
+.html-ar .module-ct-inner ul,
+.html-ar .module-ct-inner .bottom-contact,
+.html-ar .copyRight,
+.html-ar .item-page,
+.html-ar .t3-mainbody {
+    direction: rtl;
+}
+
+/* ============================================ *
+* Arabic Top Header Section / top_head Position
+* ============================================ */
+
+.html-ar .mainMenu {
+    float: left;
+}
+
+.html-ar .topHead .container {
+    flex-direction: row;
+}
+
+.html-ar .mainMenu .t3-navbar .t3-megamenu > ul.nav::before {
+    background: url(../images/bg-right-mainmenu.png) no-repeat scroll right top transparent;
+    transform: scaleX(-1);
+}
+
+.html-ar .mainMenu .t3-navbar .t3-megamenu > ul.nav::after {
+    background: url(../images/bg-left-mainmenu.png) no-repeat scroll left top transparent;
+    transform: scaleX(-1);
+}
+
+.html-ar .t3-header-inner::before {
+    right: auto;
+    left: 0;
+}
+
+/* ============================================ *
+* Arabic Menu Section
+* ============================================ */
+
+.html-ar .t3-off-canvas .t3-off-canvas-header h2 {
+    text-align: right;
+}
+
+.html-ar .off-canvas-module .nav-pills li a .caret {
+    right: auto;
+    left: 10px;
+}
+
+.html-ar .off-canvas-module .dropdown-submenu > a::after {
+    position: absolute;
+    left: 15px;
+}
+
+.html-ar .off-canvas-module .nav-pills > li .dropdown-menu {
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+.html-ar .mainMenu {
+    right: auto;
+    left: 50px;
+}
+
+.html-ar .off-canvas-effect-4.off-canvas-open .t3-wrapper,
+.html-ar .off-canvas-effect-4.off-canvas-open .t3-mainnav-android {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.html-ar .mainMenu .t3-megamenu .navbar-nav > li > a {
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.html-ar .mainMenu .t3-megamenu .dropdown-menu .mega-dropdown-inner .mega-nav > li a::before {
+    padding: 0 0 0 10px;
+}
+
+.html-ar .mainMenu .t3-megamenu .dropdown-menu .mega-nav > li a:hover {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+/* ============================================ *
+* Arabic Mega Menu Styles
+* ============================================ */
+
+.html-ar .mainMenu .t3-megamenu .big-mega-menu .dropdown-menu {
+    right: -215px !important;
+}
+
+.html-ar .mainMenu .t3-megamenu .big-mega-menu .dropdown-menu .mega-nav > li a.mega-group-title::before {
+    left: auto;
+    right: 0;
+}
+
+.html-ar .mainMenu .t3-megamenu .big-mega-menu .dropdown-menu .mega-nav.level1 > li > a:hover {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.html-ar .mainMenu .t3-megamenu .big-mega-menu .dropdown-menu .mega-nav.level2 > li > a:hover {
+    padding: 5px;
+}
+
+.html-ar .mainMenu .t3-megamenu .big-mega-menu .dropdown-menu .mega-nav.level2 > li > a {
+    padding: 5px;
+}
+
+.html-ar .mainMenu .t3-megamenu .big-mega-menu .dropdown-menu .mega-nav.level1 > li > a:hover {
+    background-color: transparent !important;
+    color: #3262a3;
+    padding-left: 0;
+}
+
+/* ============================================ *
+* Arabic About us Section
+* ============================================ */
+
+.html-ar .topMainbody1 div.topMainbody1_item {
+    min-height: 520px;
+}
+
+/* ============================================ *
+* Arabic Work Fields Section Styles
+* ============================================ */
+
+.html-ar .sc_blogspost_title {
+    float: right;
+}
+
+.html-ar .sc_blogspost_title::after {
+    left: auto;
+    right: -800px;
+}
+
+.html-ar .sc_blogspost_title::before {
+    right: auto;
+    left: -32px;
+    transform: scaleX(-1);
+}
+
+.html-ar .sc_blogpost #btcontentshowcase-control.btcontentshowcase,
+.html-ar .customLayout #btcontentshowcase-control.btcontentshowcase {
+    margin: 0 17px 0 0;
+    float: right;
+    transform: scaleX(-1);
+}
+
+.html-ar .sc_blogpost_extra,
+.html-ar div.catItemBody {
+    text-align: left;
+}
+
+.html-ar .sc_blogpost_extra a.sc_blogpost_readmore,
+.html-ar .we-intro-box > a,
+.html-ar div.catItemReadMore a,
+.html-ar div.userItemReadMore a,
+.html-ar div.tagItemReadMore a,
+.html-ar div.latestItemReadMore a,
+.html-ar div.articleList_item .readmore a {
+    padding: 0 42px 0 10px;
+}
+
+.html-ar .sc_blogpost_extra a.sc_blogpost_readmore::before,
+.html-ar .we-intro-box > a::before,
+.html-ar div.catItemReadMore a::before,
+.html-ar div.userItemReadMore a::before,
+.html-ar div.tagItemReadMore a::before,
+.html-ar div.latestItemReadMore a::before,
+.html-ar div.articleList_item .readmore a::before {
+    left: auto;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.html-ar .sc_blogpost_extra a.sc_blogpost_readmore::after,
+.html-ar .we-intro-box > a::after,
+.html-ar div.catItemReadMore a::after,
+.html-ar div.userItemReadMore a::after,
+.html-ar div.tagItemReadMore a::after,
+.html-ar div.latestItemReadMore a::after,
+.html-ar div.articleList_item .readmore a::after {
+    content: 'إقرأ المزيد';
+    left: auto;
+    right: -40px;
+    text-align: left;
+}
+
+/* ============================================ *
+* Arabic News & Events Section Styles
+* ============================================ */
+
+.html-ar .we-intro-box {
+    text-align: left;
+    border-bottom-right-radius: 8px;
+}
+
+.html-ar .t3-spotlight-2.row div[class*="col-"]:first-child {
+    padding-right: 15px;
+}
+
+.html-ar .t3-spotlight-2.row div[class*="col-"]:last-child {
+    padding-left: 15px;
+}
+
+.html-ar .we-intro-text1 {
+    text-align: right;
+}
+
+.html-ar .news-events-date-wrapper {
+    text-align: right;
+}
+
+.html-ar #Mod143,
+.html-ar #Mod144,
+.html-ar #Mod161,
+.html-ar #Mod157 {
+    overflow: hidden;
+}
+
+.html-ar #Mod161 {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.html-ar #Mod157 {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.html-ar #Mod144 {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* ============================================ *
+* Arabic Footer Section Styles
+* ============================================ */
+
+.html-ar .footerBlock .nav li a::before {
+    content: "\f104";
+    padding: 0 3px 0 10px;
+}
+
+.html-ar .t3-footnav .t3-module ul > li.active > a,
+.html-ar .t3-footnav .t3-module ul > li > a:hover {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.html-ar a.backToTop {
+    right: auto;
+    left: -4%;
+}
+
+/* ============================================ *
+* Arabic Inner Pages Styles
+* ============================================ */
+
+.html-ar .page-heading-inner {
+    text-align: right;
+}
+
+.html-ar .pageheading-title-inner {
+    padding: 10px 0 10px 10px;
+    margin-right: 0;
+    margin-left: 60px;
+}
+
+.html-ar .pageheading-title-inner::before {
+    left: auto;
+    right: -800px;
+}
+
+.html-ar .pageheading-title-inner::after {
+    right: auto;
+    left: -56px;
+    transform: scaleX(-1);
+}
+
+html.com_content .t3-content {
+    padding-top: 0;
+}
+
+html.com_content h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+html.com_content div.articleList_head {
+    padding-top: 0;
+}
+
+/* ============================================ *
+* Arabic Board Members Page Styles
+* ============================================ */
+
+.html-ar .board-member-img {
+    margin-right: 0;
+    margin-left: 3%;
+}
+
+/* ============================================ *
+* Arabic Work Fields Pages Styles
+* ============================================ */
+
+.html-ar div.catItemIntroText,
+.html-ar div.userItemIntroText,
+.html-ar div.tagItemIntroText,
+.html-ar div.latestItemIntroText {
+    text-align: right;
+}
+
+.html-ar #k2Container .itemContainer {
+    margin-right: 0;
+    margin-left: 3%;
+}
+
+/* ============================================ *
+* Arabic Photo Gallery Page Styles
+* ============================================ */
+
+.html-ar .mod-bt-portfolio-gallery .close-content {
+    right: auto;
+    left: 7px;
+    margin-right: 0;
+    margin-left: 25px;
+}
+
+/* ============================================ *
+* Arabic Our Customers Page Styles
+* ============================================ */
+
+.html-ar #btcontentshowcase176 .metro-item {
+    float: right;
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+/* ============================================ *
+* Arabic Careers Page Styles
+* ============================================ */
+
+.html-ar .t3-sidebar .module-title span {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+.html-ar .t3-sidebar .module-title::before {
+    top: calc(50% - 0px);
+}
+
+.html-ar .popover.top > .arrow::after {
+    left: -10px;
+}
+
+/* ============================================ *
+* Responsive Styles
+* ============================================ */
+
+@media (max-width: 767px) {
+
+    /* ============================================ *
+    * Top Header Section / top_head Position Styles
+    * ============================================ */
+
+    .topHead {
+        z-index: 1;
+    }
+
+    .mainMenu {
+        top: -72px;
+        z-index: 2;
+    }
+
+    /* ============================================ *
+    * background_slideshow Position Styles
+    * ============================================ */
+
+    .has_slideshow .t3-header {
+        margin-bottom: 394px;
+    }
+
+    /* ================================================================== *
+    * 1 / 2 / 5 / 6 Positions / News & Events Section Styles
+    * ================================================================== */
+
+    #Mod142 .we-intro-box, #Mod145 .we-intro-box {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    #Mod143, #Mod144 {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    /* ====================================== *
+    * Footer Positions Section Styles
+    * ======================================= */
+
+    a.backToTop {
+        right: 0;
+    }
+
+    /* ===================================== *
+    * Copyright Position Section Styles
+    * ======================================= */
+
+    .company-website {
+        display: block;
+    }
+
+    /* ============================================ *
+    * Arabic News & Events Section Styles
+    * ============================================ */
+
+    .html-ar .we-intro-box {
+        border-radius: 8px;
+    }
+
+    .html-ar #Mod143,
+    .html-ar #Mod144,
+    .html-ar #Mod161,
+    .html-ar #Mod157 {
+        border-radius: 8px;
+    }
+
+    /* ============================================= *
+    * Arabic Footer Section Styles
+    * ============================================== */
+
+    .html-ar a.backToTop {
+        left: 0;
+    }
+}
+
+@media (width: 767px) {
+
+    /* ============================================ *
+    * Top Header Section / top_head Position Styles
+    * ============================================ */
+
+    .logo {
+        width: 25%;
+    }
+
+    /* ============================================ *
+    * background_slideshow Position Styles
+    * ============================================ */
+
+    .has_slideshow .t3-header,
+    .html-ar .has_slideshow .t3-header {
+        margin-bottom: 383px;
+    }
+
+    /* ================================================================== *
+    * top_mainbody_1 Position / topMainbody1 / About us Styles
+    * ================================================================== */
+
+    .topMainbody1 div.topMainbody1_item {
+        min-height: 357px;
+    }
+
+    /* ============================================ *
+    * Inner Pages Styles
+    * ============================================ */
+
+    .pageheading-title-inner::after {
+        right: -48px;
+        border-right-width: 28px;
+        border-bottom-width: 28px;
+    }
+
+    .t3-header,
+    .careers-view.view-article .t3-header {
+        margin-bottom: 158px;
+    }
+
+    /* ============================================ *
+    * Work Fields Pages Styles
+    * ============================================ */
+
+    #k2Container .catItemImageBlock {
+        height: 149px;
+    }
+
+    /* ============================================ *
+    * Careers Page Styles
+    * ============================================ */
+
+    .careers-view.view-category .page-heading,
+    .careers-view.view-article .page-heading {
+        background-size: cover;
+    }
+
+    /* ================================================================== *
+    * Arabic top_mainbody_1 Position / topMainbody1 / About us Styles
+    * ================================================================== */
+
+    .html-ar .topMainbody1 div.topMainbody1_item {
+        min-height: 325px;
+    }
+
+    /* ============================================ *
+    * Arabic News & Events Section Styles
+    * ============================================ */
+
+    .html-ar .we-intro-box {
+        border-radius: 8px;
+    }
+
+    .html-ar #Mod143,
+    .html-ar #Mod144,
+    .html-ar #Mod161,
+    .html-ar #Mod157 {
+        border-radius: 8px;
+    }
+
+    /* ============================================= *
+    * Arabic Footer Section Styles
+    * ============================================== */
+
+    .html-ar a.backToTop {
+        left: 0;
+    }
+
+    /* ============================================ *
+    * Arabic Inner Pages Styles
+    * ============================================ */
+
+    .html-ar .pageheading-title-inner::after {
+        left: -48px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* ============================================ *
+    * Top Header Section / top_head Position Styles
+    * ============================================ */
+
+    .logo {
+        top: -30px;
+        width: 15%;
+        float: left;
+    }
+
+    .topHead {
+        z-index: 1;
+    }
+
+    .topHead .container {
+        display: flex;
+        justify-content: center;
+        padding-top: 3px;
+    }
+
+    .bt_social_icon.topSocialIcon {
+        overflow: hidden;
+        float: right;
+        margin-top: 35px;
+    }
+
+    .mod-languages {
+        margin-top: 35px;
+    }
+
+    /* ============================================ *
+    * Menu Section Styles
+    * ============================================ */
+
+    .mainMenu {
+        top: -40px;
+        z-index: 2;
+    }
+
+    /* ============================================ *
+    * background_slideshow Position Styles
+    * ============================================ */
+
+    .has_slideshow .t3-header,
+    .html-ar .has_slideshow .t3-header {
+        margin-bottom: 452px;
+    }
+
+    /* ================================================================== *
+    * top_mainbody_1 Position / topMainbody1 / About us Styles
+    * ================================================================== */
+
+    .topMainbody1 div.topMainbody1_item {
+        min-height: 357px;
+    }
+
+    /* ================================================================== *
+    * 1 / 2 / 5 / 6 Positions / News & Events Section Styles
+    * ================================================================== */
+
+    #Mod142 .we-intro-box, #Mod145 .we-intro-box {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    #Mod143, #Mod144 {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    #Mod144 {
+        height: 339px;
+    }
+
+    /* ====================================== *
+    * Footer Positions Section Styles
+    * ======================================= */
+
+    a.backToTop {
+        right: 0;
+    }
+
+    /* ============================================ *
+    * Inner Pages Styles
+    * ============================================ */
+
+    .pageheading-title-inner::after {
+        right: -52px;
+        border-right-width: 32px;
+        border-bottom-width: 32px;
+    }
+
+    /* ============================================ *
+    * Work Fields Pages Styles
+    * ============================================ */
+
+    #k2Container .catItemImageBlock {
+        height: 149px;
+    }
+
+    /* ============================================ *
+    * Careers Page Styles
+    * ============================================ */
+
+    .careers-view.view-category .page-heading,
+    .careers-view.view-article .page-heading {
+        background-size: cover;
+    }
+
+    .t3-header,
+    .careers-view.view-article .t3-header {
+        margin-bottom: 260px;
+    }
+
+    .careers-view.view-article .t3-content,
+    .careers-view.view-article .t3-sidebar {
+        width: 100%;
+    }
+
+    /* ============================================ *
+    * Arabic Top Header Section / top_head Position Styles
+    * ============================================ */
+
+    .html-ar .logo {
+        float: right;
+    }
+
+    /* ================================================================== *
+    * Arabic top_mainbody_1 Position / topMainbody1 / About us Styles
+    * ================================================================== */
+
+    .html-ar .topMainbody1 div.topMainbody1_item {
+        min-height: 325px;
+    }
+
+    /* ============================================ *
+    * Arabic News & Events Section Styles
+    * ============================================ */
+
+    .html-ar #Mod144 {
+        height: 310px;
+    }
+
+    .html-ar .we-intro-box {
+        border-radius: 8px;
+    }
+
+    .html-ar #Mod143,
+    .html-ar #Mod144,
+    .html-ar #Mod161,
+    .html-ar #Mod157 {
+        border-radius: 8px;
+    }
+
+    /* ============================================= *
+    * Arabic Footer Section Styles
+    * ============================================== */
+
+    .html-ar a.backToTop {
+        left: 0;
+    }
+
+    /* ============================================ *
+    * Arabic Inner Pages Styles
+    * ============================================ */
+
+    .html-ar .pageheading-title-inner::after {
+        left: -52px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    /* ============================================ *
+    * Top Header Section / top_head Position Styles
+    * ============================================ */
+
+    .logo {
+        top: -30px;
+        width: 15%;
+        float: left;
+    }
+
+    .topHead {
+        z-index: 1;
+    }
+
+    .topHead .container {
+        display: flex;
+        justify-content: center;
+        padding-top: 3px;
+    }
+
+    .bt_social_icon.topSocialIcon {
+        overflow: hidden;
+        float: right;
+        margin-top: 35px;
+    }
+
+    .mod-languages {
+        margin-top: 35px;
+    }
+
+    /* ============================================ *
+    * Menu Section Styles
+    * ============================================ */
+
+    .mainMenu {
+        top: -40px;
+        z-index: 2;
+    }
+
+    /* ============================================ *
+    * background_slideshow Position Styles
+    * ============================================ */
+
+    .has_slideshow .t3-header,
+    .html-ar .has_slideshow .t3-header {
+        margin-bottom: 422px;
+    }
+
+    /* ================================================================== *
+    * top_mainbody_1 Position / topMainbody1 / About us Styles
+    * ================================================================== */
+
+    .topMainbody1 div.topMainbody1_item {
+        min-height: 645px;
+    }
+
+    .t3-spotlight-2.row div[class*="col-"]:first-child {
+        padding-right: 0;
+    }
+
+    .t3-spotlight-2.row div[class*="col-"]:last-child {
+        padding-left: 0;
+    }
+
+    .t3-sl-1 iframe {
+        height: 419px;
+    }
+
+    /* ====================================== *
+    * Footer Positions Section Styles
+    * ======================================= */
+
+    a.backToTop {
+        right: 0;
+    }
+
+    /* ============================================ *
+    * Work Fields Pages Styles
+    * ============================================ */
+
+    #k2Container .catItemImageBlock {
+        height: 149px;
+    }
+
+    /* ============================================ *
+    * Careers Page Styles
+    * ============================================ */
+
+    .careers-view.view-category .page-heading,
+    .careers-view.view-article .page-heading {
+        background-size: cover;
+    }
+
+    .t3-header,
+    .careers-view.view-article .t3-header {
+        margin-bottom: 260px;
+    }
+
+    .careers-view.view-article .t3-content,
+    .careers-view.view-article .t3-sidebar {
+        width: 100%;
+    }
+
+    /* ============================================ *
+    * Arabic Top Header Section / top_head Position Styles
+    * ============================================ */
+
+    .html-ar .logo {
+        float: right;
+    }
+
+    /* ================================================================== *
+    * Arabic top_mainbody_1 Position / topMainbody1 / About us Styles
+    * ================================================================== */
+
+    .html-ar .topMainbody1 div.topMainbody1_item {
+        min-height: 517px;
+    }
+
+    /* ============================================ *
+    * Arabic News & Events Section Styles
+    * ============================================ */
+
+    .html-ar #Mod144 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .html-ar .t3-sl-1 iframe {
+        height: 334px;
+    }
+
+    .html-ar .t3-spotlight-2.row div[class*="col-"]:first-child {
+        padding-left: 0;
+    }
+
+    .html-ar .t3-spotlight-2.row div[class*="col-"]:last-child {
+        padding-right: 0;
+    }
+
+    /* ============================================= *
+    * Arabic Footer Section Styles
+    * ============================================== */
+
+    .html-ar a.backToTop {
+        left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* ============================================ *
+    * Top Header Section / top_head Position Styles
+    * ============================================ */
+
+    .logo {
+        top: -30px;
+        width: 10%;
+        float: left;
+    }
+
+    .topHead .container {
+        justify-content: flex-start;
+    }
+
+    .mod-languages {
+        margin-top: 19px;
+    }
+
+    .t3-spotlight-2.row div[class*="col-"]:first-child {
+        padding-right: 0;
+    }
+
+    .t3-spotlight-2.row div[class*="col-"]:last-child {
+        padding-left: 0;
+        height: 295px;
+        overflow: hidden;
+    }
+
+    #Mod144 {
+        height: 295px;
+    }
+
+    /* ============================================ *
+    * Arabic Top Header Section / top_head Position Styles
+    * ============================================ */
+
+    .html-ar .logo {
+        float: right;
+    }
+    
+    .html-ar #Mod144 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .html-ar .t3-spotlight-2.row div[class*="col-"]:first-child {
+        padding-left: 0;
+    }
+
+    .html-ar .t3-spotlight-2.row div[class*="col-"]:last-child {
+        padding-right: 0;
+    }
+}

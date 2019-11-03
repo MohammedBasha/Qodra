@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>Bt_Portfolio</name>
+	<creationDate>February 2012</creationDate>
+	<author>Bowthemes</author>
+	<authorEmail>support@bowthemes.com</authorEmail>
+	<authorUrl>http://www.bowthemes.com</authorUrl>
+	<copyright>Copyright © 2011 Bow Themes</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>3.0.9</version>
+	<description>
+	<![CDATA[
+		
+		<div class="bt_description">
+			<h3>BT Portfolio Component Version 3.0.9</h3>			
+			<a href="http://bowthemes.com" target="_blank"><img src="../components/com_bt_portfolio/assets/icon/portfolio.png"></a>
+			<p>BT Portfolio is a Joomla component which allows you to present your favorite projects on your website. BT Portfolio, indeed, is built to help users manage the portfolio playlist with further description, photo gallery and other extra fields included.
+			</p>
+			<br clear="both" />
+			<h3>Features</h3>
+			<ul class="list-style">
+				<li>Multi-level management of categories.</li>
+				<li>Ability to manage every single photo album under each portfolio and to select your featured photo for the album.</li>
+				<li>Good management of voting and review.</li>
+				<li>Ability to well manage the extra fields in accordance with category and portfolio items.</li>
+				<li>Excellent management of layout templates (Easy to add or modify custom templates).</li>
+				<li>Auto photo cropping and resizing.</li>
+				<li>Friendly SEF supported.</li>
+				<li>Free breadcrumbs supported.</li>
+				<li>“Search” Plugin included.</li>
+				<li>“Article” Plugin included (which allows users to insert projects into articles).</li>
+				<li>Easy layout adjustment ( in Details or Thumbnails).</li>
+				<li>Responsive layout supported</>
+				<li>Fully compatible with Joomla!2.5 and 3.x</li>
+				<li>Cross Browser Support: IE7+, Firefox 2+, Safari 3+, Chrome 8+, Opera 9+.</li>
+				<li>Video tutorials and forum support provided.</li>
+			</ul>
+			<h3>UPgrade versions</h3>
+			<p>
+				Your current versions is 3.0.9. <a target="_blank" href="http://bowthemes.com/bt-Portfolio-component.html">Find our latest versions now</a>
+			</p>
+			<h3>Userful links</h3>
+			<ul>
+				<li><a target="_blank" href="http://bowthemes.com/bt-Portfolio-component.html">Video tutorials</a></li>
+				<li><a target="_blank" href="http://bowthemes.com/forums/21-bt-portfolio-component-for-joomla-25/">Report bug</a></li>
+				<li><a target="_blank" href="http://bowthemes.com/forums/21-bt-portfolio-component-for-joomla-25/">Forum support</a></li>
+			</ul>
+			<h3>About bow themes & copyright</h3>	
+			<p>
+				Bow Themes is Professional Joomla template provider. We are focused on creating unique, attractive and clean templates without loosing flexibility and simplicity of customization
+			</p>
+			Copyright (C) 2012 BowThemes	
+
+		</div>
+		<style>
+			.bt_description{
+				text-align: left;
+			}
+			.bt_description h3{
+				text-transform: uppercase;
+				margin: 20px 0px 10px 0px;
+			}
+			.bt_description img{
+				float:left;
+				margin:5px 5px 5px 0px;
+			}
+			.bt_description p,.bt_description li{
+				list-style: none outside none;
+				padding: 5px 5px 5px 20px;				
+			}
+			
+			.bt_description ul.list-style li{
+				background:url(../components/com_bt_portfolio/assets/icon/tick.png) 0px 6px no-repeat;
+				padding-left:30px;
+				line-height:15px;
+			}
+		</style>
+	]]>
+	</description>
+ 
+	<install> 
+		<sql folder="admin">
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> 
+		<sql folder="admin">
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> 
+		<schemas> 
+			<schemapath type="mysql">sql/updates</schemapath> 
+		</schemas> 
+	</update>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>bt_portfolio.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<folder>assets</folder>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>themes</folder>
+		<folder>language</folder>
+		<folder>sef_ext</folder>
+		<folder>helpers</folder>
+		<folder>controllers</folder>
+	</files>
+	<media destination="bt_portfolio" folder="site/assets">
+		<folder>icon</folder>
+	</media>
+	<languages folder="site">
+			<language tag="en-GB">language/en-GB/en-GB.com_bt_portfolio.ini</language>	
+	</languages>
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../media/bt_portfolio/icon/portfolio-menu.png">COM_BT_PORTFOLIO_MENU</menu>
+		<submenu>
+			<menu view="portfolios" link="option=com_bt_portfolio&amp;view=cpanel">COM_BT_PORTFOLIO_MENU_CPANEL</menu>
+			<menu view="portfolios" link="option=com_bt_portfolio&amp;view=portfolios">COM_BT_PORTFOLIO_MENU_PORTFOLIOS</menu>
+			<menu view="categories" link="option=com_bt_portfolio&amp;view=categories">COM_BT_PORTFOLIO_MENU_CATEGORIES</menu>
+			<menu view="extrafields" link="option=com_bt_portfolio&amp;view=extrafields">COM_BT_PORTFOLIO_MENU_EXTRAFIELDS</menu>
+			<menu view="comments" link="option=com_bt_portfolio&amp;view=comments">COM_BT_PORTFOLIO_MENU_COMMENTS</menu>		
+		</submenu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>bt_portfolio.php</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+		</files>
+ 
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_bt_portfolio.ini</language>	
+			<language tag="en-GB">language/en-GB/en-GB.com_bt_portfolio.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_bt_portfolio.menu.ini</language>
+		</languages>
+	</administration>
+ 
+</extension>
